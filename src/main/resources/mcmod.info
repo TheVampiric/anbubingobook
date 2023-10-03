@@ -1,0 +1,23 @@
+[
+  {
+    "modid": "anbubingobook",
+    "name": "Anbu Bingo Book",
+    "description": "In game guide book and QOL Changes for AHZNB's Naruto Shinobicraft",
+    "version": "0.0.9",
+    "credits": "Credit to AHZNB for Shinobicraft - https://www.curseforge.com/minecraft/mc-mods/ahznbs-naruto-mod/files/4767054  ",
+    "logoFile": "",
+    "mcversion": "1.12.2",
+    "url": "WIKI HERE NOWWWW https://ahznb-naruto-shinobicraft.fandom.com/wiki/AHZNB_Naruto_ShinobiCraft_Wiki",
+    "updateUrl": "",
+    "authorList": [
+      "TheVampiric (X), Bobzeus (Door)"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "requiredMods": [
+      "  narutomod",
+      "patchouli"
+    ],
+    "useDependencyInformation": "true"
+  }
+]
