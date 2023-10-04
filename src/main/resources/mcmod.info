@@ -8,15 +8,15 @@
     "logoFile": "",
     "mcversion": "1.12.2",
     "url": "WIKI HERE NOWWWW https://ahznb-naruto-shinobicraft.fandom.com/wiki/AHZNB_Naruto_ShinobiCraft_Wiki",
-    "updateUrl": "",
+    "updateUrl": "https://github.com/TheVampiric/anbubingobook",
     "authorList": [
       "TheVampiric (X), Bobzeus (Door)"
     ],
     "dependencies": [],
     "dependants": [],
     "requiredMods": [
-      "  narutomod",
-      "patchouli"
+      " patchouli",
+      "narutomod"
     ],
     "useDependencyInformation": "true"
   }

@@ -14,7 +14,7 @@
       "name": "ModConfig",
       "type": "code",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "ids": {},
       "registry_name": "mod_config"
