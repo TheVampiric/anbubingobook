@@ -1,1 +1,16 @@
-{"bookGuiScale":0,"clickedVisualize":false,"bookData":{}}
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "anbubingobook:bingo_book": {
+      "viewedEntries": [
+        "anbubingobook:test/test_entry"
+      ],
+      "bookmarks": [],
+      "history": [
+        "anbubingobook:test/test_entry"
+      ],
+      "completedManualQuests": []
+    }
+  }
+}
