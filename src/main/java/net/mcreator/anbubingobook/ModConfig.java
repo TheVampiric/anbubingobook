@@ -27,6 +27,7 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.World;
 
 import java.util.Random;
+/**
 import net.narutomod.event.SpecialEvent;
 import net.narutomod.NarutomodModVariables;
 import net.narutomod.EntityTracker;
@@ -34,7 +35,7 @@ import net.narutomod.ElementsNarutomodMod;
 import net.narutomod.procedure.ProcedureUtils;
 import net.narutomod.entity.EntityNinjaMob;
 import net.narutomod.gui.overlay.OverlayChakraDisplay; 
-
+*/
 @ElementsAnbubingobookMod.ModElement.Tag
 public class ModConfig extends ElementsAnbubingobookMod.ModElement	 {
 	/**
