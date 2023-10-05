@@ -1,10 +1,31 @@
 {
   "id_map": {},
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "BingoBook",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bingo_book"
+    },
+    {
+      "name": "ModConfig",
+      "type": "code",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "mod_config"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.bingo_book.name": "Bingo Book"
+    }
   },
   "foldersRoot": {
     "name": "~",
@@ -20,9 +41,10 @@
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "updateURL": "https://github.com/TheVampiric/anbubingobook",
     "requiredMods": [
-      "patchouli",
-      " narutomod"
+      " patchouli",
+      "narutomod"
     ],
     "dependencies": [],
     "dependants": [],
