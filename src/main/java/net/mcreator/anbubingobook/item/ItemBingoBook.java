@@ -7,17 +7,12 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
-import net.minecraft.world.World;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
 import net.mcreator.anbubingobook.ElementsAnbubingobookMod;
-
-import java.util.List;
 
 @ElementsAnbubingobookMod.ModElement.Tag
 public class ItemBingoBook extends ElementsAnbubingobookMod.ModElement {
@@ -43,7 +38,7 @@ public class ItemBingoBook extends ElementsAnbubingobookMod.ModElement {
 			maxStackSize = 64;
 			setUnlocalizedName("bingo_book");
 			setRegistryName("bingo_book");
-			setCreativeTab(CreativeTabs.MISC);
+			setCreativeTab(null);
 		}
 
 		@Override
@@ -59,12 +54,6 @@ public class ItemBingoBook extends ElementsAnbubingobookMod.ModElement {
 		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, IBlockState par2Block) {
 			return 1F;
-		}
-
-		@Override
-		public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
-			super.addInformation(itemstack, world, list, flag);
-			list.add("GUDIEBOOK");
 		}
 	}
 }

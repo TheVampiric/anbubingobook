@@ -1,6 +1,10 @@
 {
-    "name": "BingoBook",
+    "name": "Bingo Book",
     "landing_text": "Go read the wiki",
 	"show_progress": false,
-    "version": 1
+    "version": 0,
+    "subtitle": "4th Great War Edition",
+    "creative_tab": "tabmodtab",
+    "model": "anbubingobook:bingo_book", 
+    "use_resource_pack": true
 }
