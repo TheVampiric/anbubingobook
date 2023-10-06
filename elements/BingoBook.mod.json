@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "anbumask1_item",
+    "texture": "itembingo_book",
     "customModelName": "Normal",
     "name": "Bingo Book",
     "rarity": "COMMON",

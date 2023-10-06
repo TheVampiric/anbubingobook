@@ -6,7 +6,7 @@
   },
   "rewards": {
     "loot": [
-      "anbubingobook:bingo_book"
+      "anbubingobook:grant_book_on_first_join"
     ]
   }
 }

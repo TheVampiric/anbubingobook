@@ -1,10 +1,15 @@
 {
     "name": "Bingo Book",
-    "landing_text": "Go read the wiki",
+    "landing_text": "You can also read the wiki here: https://ahznb-naruto-shinobicraft.fandom.com/wiki/AHZNB_Naruto_ShinobiCraft_Wiki  we try our best to update it regularly ",
 	"show_progress": false,
     "version": 0,
+    /** 
+    "index_icon":"assets/anbubingobook/textures/item/anbumask1_item.png"
+    */    
+    "filler_texture": "anbubingobook:item/anbumask1_item.png",
     "subtitle": "4th Great War Edition",
     "creative_tab": "tabmodtab",
     "model": "anbubingobook:bingo_book", 
+    "book_texture": "patchouli:textures/gui/book_cyan.png", 
     "use_resource_pack": true
 }

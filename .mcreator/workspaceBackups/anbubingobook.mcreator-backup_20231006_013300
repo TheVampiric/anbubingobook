@@ -18,6 +18,15 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "mod_config"
+    },
+    {
+      "name": "GrantBookOnFirstJoin",
+      "type": "loottable",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "grant_book_on_first_join"
     }
   ],
   "variable_elements": [],

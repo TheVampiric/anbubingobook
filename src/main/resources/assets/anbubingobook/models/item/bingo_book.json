@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "anbubingobook:items/anbumask1_item"
+    "layer0": "anbubingobook:items/itembingo_book"
   }
 }

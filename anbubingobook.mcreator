@@ -6,7 +6,7 @@
       "type": "item",
       "sortid": 2,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "bingo_book"
     },
