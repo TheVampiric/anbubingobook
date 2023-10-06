@@ -1,7 +1,7 @@
 {
     "name": "Test Entry",
     "icon": "minecraft:writable_book",
-    "category": "anbubingobook:test_category",
+    "category": "anbubingobook:Jutsu",
     "pages": [
         {
             "type": "text",
