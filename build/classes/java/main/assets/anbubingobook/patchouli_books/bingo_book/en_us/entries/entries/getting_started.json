@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "text",
-            "text": "Welcome to the AHZ narutomod, this guide book added by the anbubingobook addon will aim to guide you through some of the commonly asked questions in the mod. $(br) To get started with this mod you will need a few things, namely a kunai and a shuriken in your inventory to unlock the ninja advancement $(br2) Welcome to the AHZ narutomod, this guide book added by the anbubingobook addon will aim to guide you through some of the commonly asked questions in the mod. $(br) To get started with this mod you will need a few things, namely a kunai and a shuriken in your inventory to unlock the ninja advancement"
+            "text": "Welcome to the AHZ narutomod, this guide book added by the anbubingobook addon will aim to guide you through some of the commonly asked questions in the mod. $(br)To get started with this mod you will need a few things, namely a kunai and a shuriken in your inventory to unlock the ninja advancement"
+        },
+		{
+            "type": "text",
+            "text": "Upon doing the previous step you will be given the advancement, from here you will need to obtain 10 regular mc xp and damage / take damage from a hostile mob to begin getting ninja xp, after which the chakra bar will appear and you will receive all the buffs from being a ninja"
         }
     ]
 }

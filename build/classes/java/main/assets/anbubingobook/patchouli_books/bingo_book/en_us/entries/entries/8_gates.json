@@ -1,0 +1,11 @@
+{
+    "name": "The 8 gates",
+    "icon": "narutomod:eightgates",
+    "category": "anbubingobook:8_gates",
+    "pages": [
+		{
+            "type": "text",
+            "text": "Test text about 8 gates"
+        }
+	]
+}

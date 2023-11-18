@@ -53,17 +53,8 @@ sourceSets {
     main { output.resourcesDir = output.classesDir }
 }
 
-repositories {
-    maven {
-        url "https://cursemaven.com"
-    }
-}
-
-
 dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2855'
-
-    runtimeOnly fg.deobf("curse.maven:narutomod-831157:4767054")
 }
 
 apply from: 'mcreator.gradle'
