@@ -1,0 +1,15 @@
+{
+    "name": "Recipies",
+    "icon": "narutomod:eightgates",
+    "category": "anbubingobook:other",
+    "pages": [
+		{
+            "type": "text",
+            "text": "Theese pages will show you all the possible items that are craftable in the mod."
+        },
+		{
+			"type":"crafting",
+			"recipe": "minecraft:furnace"
+		}
+	]
+}
