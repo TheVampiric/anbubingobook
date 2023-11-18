@@ -43,8 +43,8 @@
     "serverSideOnly": false,
     "updateURL": "https://github.com/TheVampiric/anbubingobook",
     "requiredMods": [
-      " patchouli",
-      "narutomod"
+      "patchouli",
+      " narutomod"
     ],
     "dependencies": [],
     "dependants": [],

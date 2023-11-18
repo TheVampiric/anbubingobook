@@ -15,8 +15,8 @@
     "dependencies": [],
     "dependants": [],
     "requiredMods": [
-      " patchouli",
-      "narutomod"
+      "patchouli",
+      " narutomod"
     ],
     "useDependencyInformation": "true"
   }

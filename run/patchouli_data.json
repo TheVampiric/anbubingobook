@@ -4,11 +4,15 @@
   "bookData": {
     "anbubingobook:bingo_book": {
       "viewedEntries": [
-        "anbubingobook:test/test_entry"
+        "anbubingobook:test/test_entry",
+        "anbubingobook:test/image_test",
+        "anbubingobook:entries/getting_started"
       ],
       "bookmarks": [],
       "history": [
-        "anbubingobook:test/test_entry"
+        "anbubingobook:entries/getting_started",
+        "anbubingobook:test/test_entry",
+        "anbubingobook:test/image_test"
       ],
       "completedManualQuests": []
     }

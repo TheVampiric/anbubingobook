@@ -1,0 +1,11 @@
+{
+    "name": "Getting started",
+    "icon": "minecraft:writable_book",
+    "category": "anbubingobook:getting_started",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Welcome to the AHZ narutomod, this guide book added by the anbubingobook addon will aim to guide you through some of the commonly asked questions in the mod. $(br) To get started with this mod you will need a few things, namely a kunai and a shuriken in your inventory to unlock the ninja advancement $(br2) Welcome to the AHZ narutomod, this guide book added by the anbubingobook addon will aim to guide you through some of the commonly asked questions in the mod. $(br) To get started with this mod you will need a few things, namely a kunai and a shuriken in your inventory to unlock the ninja advancement"
+        }
+    ]
+}
