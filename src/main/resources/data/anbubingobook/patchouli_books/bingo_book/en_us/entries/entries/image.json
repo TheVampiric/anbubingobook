@@ -1,0 +1,12 @@
+{
+    "name": "Image testing",
+    "icon": "narutomod:eightgates",
+    "category": "anbubingobook:image_test",
+    "pages": [
+		{
+            "type": "image",
+            "title": "Image testing",
+			"images": ["anbubingobook:textures/items/anbumask1_item.png"]
+        }
+	]
+}
