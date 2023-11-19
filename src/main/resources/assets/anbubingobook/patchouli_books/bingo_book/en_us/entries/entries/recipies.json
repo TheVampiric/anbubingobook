@@ -9,7 +9,7 @@
         },
 		{
 			"type":"crafting",
-			"recipe": "minecraft:furnace"
+			"recipe": "narutomod:curryof_life"
 		}
 	]
 }

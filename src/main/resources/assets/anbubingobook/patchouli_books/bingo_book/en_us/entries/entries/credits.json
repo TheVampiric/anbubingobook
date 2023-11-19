@@ -1,0 +1,11 @@
+{
+    "name": "Credits",
+    "icon": "narutomod:team_scroll",
+    "category": "anbubingobook:other",
+    "pages": [
+		{
+            "type": "text",
+            "text": "Big thanks to X (main contributor to this addon and the wiki) and to ahz who created the mod, link to the $(l:https://discord.gg/6wrfgNFrnP) discord $(/l)"
+        }
+	]
+}
