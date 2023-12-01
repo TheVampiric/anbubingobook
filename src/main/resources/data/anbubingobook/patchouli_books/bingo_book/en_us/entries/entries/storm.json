@@ -1,1 +1,11 @@
-{\rtf1}
+{
+    "name": "Storm release",
+    "icon": "narutomod:ranton",
+    "category": "anbubingobook:kg_dojutsu",
+    "pages": [
+		{
+            "type": "text",
+            "text": "average UK weather"	
+        }
+	]
+}

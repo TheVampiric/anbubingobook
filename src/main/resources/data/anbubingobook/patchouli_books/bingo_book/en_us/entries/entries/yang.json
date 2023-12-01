@@ -1,1 +1,11 @@
-{\rtf1}
+{
+    "name": "Yang release",
+    "icon": "narutomod:yoton",
+    "category": "anbubingobook:jutsu",
+    "pages": [
+		{
+            "type": "text",
+            "text": "Where's yin?"	
+        }
+	]
+}

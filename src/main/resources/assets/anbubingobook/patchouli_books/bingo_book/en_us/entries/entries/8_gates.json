@@ -1,19 +1,11 @@
 {
     "name": "The 8 gates",
     "icon": "narutomod:eightgates",
-    "category": "anbubingobook:8_gates",
+    "category": "anbubingobook:other",
     "pages": [
 		{
             "type": "text",
             "text": "The 8 gates can be obtained via completeing might guys quest, to spawn might guy you must have a village in a 'foresty' biome with at least 20 doors and 10 villagers $(br)Upon spawning he will announce it in chat to the players in that village, the players then need to right click him to get his quest and"	
-        },
-		{
-			"type": "text",
-			"text": "then wait until the following midnight. upon reaching midnight he will give the player more text as the village becomes under seige from zombie skeletons and zombies, the player must during this night get more kills than might guy whilst ensuring that no villagers die, Only 1 player can have this quest at a time."
-		},
-		{
-			"type": "text",
-			"text": "$(li) test1, $(li)test2, $(li)test3, $(li)test4"
-		}
+        }
 	]
 }

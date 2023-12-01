@@ -1,0 +1,11 @@
+{
+    "name": "Tailed Beasts",
+    "icon": "narutomod:futton",
+    "category": "anbubingobook:tailed_beasts",
+    "pages": [
+		{
+            "type": "text",
+            "text": "tuberculosis"	
+        }
+	]
+}

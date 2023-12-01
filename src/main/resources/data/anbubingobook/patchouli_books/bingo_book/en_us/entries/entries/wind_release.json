@@ -1,1 +1,11 @@
-{\rtf1}
+{
+    "name": "Wind release",
+    "icon": "narutomod:futon",
+    "category": "anbubingobook:jutsu",
+    "pages": [
+		{
+            "type": "text",
+            "text": "Wind"	
+        }
+	]
+}

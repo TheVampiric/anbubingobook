@@ -1,1 +1,11 @@
-{\rtf1}
+{
+    "name": "Lava release",
+    "icon": "narutomod:yooton",
+    "category": "anbubingobook:kg_dojutsu",
+    "pages": [
+		{
+            "type": "text",
+            "text": "Lava"	
+        }
+	]
+}

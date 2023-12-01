@@ -1,7 +1,7 @@
 {
     "name": "Image testing",
     "icon": "narutomod:eightgates",
-    "category": "anbubingobook:image_test",
+    "category": "anbubingobook:other",
     "pages": [
 		{
             "type": "image",

@@ -1,11 +1,11 @@
 {
-    "name": "Earth release",
-    "icon": "narutomod:doton",
+    "name": "Medical release",
+    "icon": "narutomod:iryo_jutsu",
     "category": "anbubingobook:jutsu",
     "pages": [
 		{
             "type": "text",
-            "text": "Earth"	
+            "text": "MEDIC"	
         }
 	]
 }

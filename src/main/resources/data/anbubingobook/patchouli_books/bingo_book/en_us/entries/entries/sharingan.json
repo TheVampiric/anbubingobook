@@ -1,0 +1,11 @@
+{
+    "name": "Sharingan",
+    "icon": "narutomod:sharinganhelmet",
+    "category": "anbubingobook:kg_dojutsu",
+    "pages": [
+		{
+            "type": "text",
+            "text": "reversal red eyes"	
+        }
+	]
+}

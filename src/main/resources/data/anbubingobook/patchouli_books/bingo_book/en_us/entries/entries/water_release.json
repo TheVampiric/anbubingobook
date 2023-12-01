@@ -1,1 +1,11 @@
-{\rtf1}
+{
+    "name": "Water release",
+    "icon": "narutomod:suiton",
+    "category": "anbubingobook:jutsu",
+    "pages": [
+		{
+            "type": "text",
+            "text": "Water"	
+        }
+	]
+}

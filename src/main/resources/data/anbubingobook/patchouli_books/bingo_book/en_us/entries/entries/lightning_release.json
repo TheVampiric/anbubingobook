@@ -1,1 +1,11 @@
-{\rtf1}
+{
+    "name": "Lightning release",
+    "icon": "narutomod:raiton",
+    "category": "anbubingobook:jutsu",
+    "pages": [
+		{
+            "type": "text",
+            "text": "What a shocker"	
+        }
+	]
+}

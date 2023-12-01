@@ -1,0 +1,11 @@
+{
+    "name": "Bone release",
+    "icon": "narutomod:shikotsumyaku",
+    "category": "anbubingobook:kg_dojutsu",
+    "pages": [
+		{
+            "type": "text",
+            "text": "Bone"	
+        }
+	]
+}

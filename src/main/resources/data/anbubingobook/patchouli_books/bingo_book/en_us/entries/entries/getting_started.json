@@ -1,7 +1,7 @@
 {
     "name": "Getting started",
     "icon": "minecraft:writable_book",
-    "category": "anbubingobook:getting_started",
+    "category": "anbubingobook:starting",
     "pages": [
         {
             "type": "text",

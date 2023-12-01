@@ -1,1 +1,11 @@
-{\rtf1}
+{
+    "name": "Wood release",
+    "icon": "narutomod:mokuton",
+    "category": "anbubingobook:kg_dojutsu",
+    "pages": [
+		{
+            "type": "text",
+            "text": "I'm not making that joke"	
+        }
+	]
+}

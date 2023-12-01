@@ -1,1 +1,11 @@
-{\rtf1}
+{
+    "name": "Explosion release",
+    "icon": "narutomod:bakuton",
+    "category": "anbubingobook:kg_dojutsu",
+    "pages": [
+		{
+            "type": "text",
+            "text": "Bomb"	
+        }
+	]
+}

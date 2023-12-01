@@ -1,0 +1,11 @@
+{
+    "name": "Byakugan",
+    "icon": "narutomod:byakuganhelmet",
+    "category": "anbubingobook:kg_dojutsu",
+    "pages": [
+		{
+            "type": "text",
+            "text": "Byakugan"	
+        }
+	]
+}

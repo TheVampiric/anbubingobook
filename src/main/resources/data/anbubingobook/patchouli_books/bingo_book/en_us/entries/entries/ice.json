@@ -1,1 +1,11 @@
-{\rtf1}
+{
+    "name": "Ice release",
+    "icon": "narutomod:hyoton",
+    "category": "anbubingobook:kg_dojutsu",
+    "pages": [
+		{
+            "type": "text",
+            "text": "Ice Ice Baby"	
+        }
+	]
+}

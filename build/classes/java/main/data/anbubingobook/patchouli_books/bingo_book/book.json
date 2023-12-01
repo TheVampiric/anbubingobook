@@ -4,10 +4,10 @@
 	"show_progress": false,
     "version": 0,
 	
-    //"index_icon":"assets/anbubingobook/textures/item/anbumask1_item.png"
+    "index_icon":"anbubingobook:textures/items/anbumask1_item.png",
+    "filler_texture": "anbubingobook:textures/items/anbumask1_item.png",
     
-	// "filler_texture": "anbubingobook:item/anbumask1_item.png",
-    "subtitle": "4th Great War Edition",
+	"subtitle": "4th Great War Edition",
     "creative_tab": "tabmodtab",
     "model": "anbubingobook:bingo_book", 
     "book_texture": "patchouli:textures/gui/book_cyan.png", 

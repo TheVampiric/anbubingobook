@@ -1,1 +1,11 @@
-{\rtf1}
+{
+    "name": "Fire release",
+    "icon": "narutomod:katon",
+    "category": "anbubingobook:jutsu",
+    "pages": [
+		{
+            "type": "text",
+            "text": "Fire"	
+        }
+	]
+}

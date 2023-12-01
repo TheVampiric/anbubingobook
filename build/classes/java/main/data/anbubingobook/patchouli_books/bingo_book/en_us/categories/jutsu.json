@@ -1,5 +1,5 @@
 {
     "name": "Jutsu",
     "description": "Information about the jutsu in the mod as well as what they do / how to use them",
-    "icon": "minecraft:writable_book"
+    "icon": "narutomod:ninjutsu"
 }
