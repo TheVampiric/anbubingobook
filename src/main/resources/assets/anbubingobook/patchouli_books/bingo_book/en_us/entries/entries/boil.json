@@ -5,7 +5,12 @@
     "pages": [
 		{
             "type": "text",
-            "text": "Boil"	
-        }
+            "text": "Boil is the kg of fire and water release. It currently contains 2 moves being corrosion mist and unrivaled strength."			
+        },
+		{
+			"type": "text",
+			"title": "corrosion mist",
+			"text": "corrosion mist is a move that allows the user to charge up a large amount of steam that is then released in front of the user, the size, duration, damage and chakra cost of this move is dependant on the amount charged."
+		}
 	]
 }

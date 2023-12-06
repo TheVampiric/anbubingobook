@@ -1,5 +1,6 @@
 {
   "type": "advancement_reward",
+  "name": "patchouli:book",
   "pools": [
     {
       "rolls": 1,
@@ -10,7 +11,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{\"patchouli:book\": \"bingo_book\"}"
+              "tag": "{\"patchouli:book\": \"anbubingobook:bingo_book\"}"
             }
           ]
         }
@@ -18,3 +19,4 @@
     }
   ]
 }
+
