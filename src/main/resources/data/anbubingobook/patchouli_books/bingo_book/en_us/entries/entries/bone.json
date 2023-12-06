@@ -5,7 +5,36 @@
     "pages": [
 		{
             "type": "text",
-            "text": "Bone"	
-        }
+            "text": "Bone is a kg that unlike most others, does not have any requried releases to use or obtain. it current has 6 moves"
+        },
+		{	"type": "text",
+			"title": "Larch dance",
+			"text": "Larch dance when used will replace the players chestplate with bones and grant the user +5 armor toughness and +20 armor alongside resistance 4. this will last until the user removes the bones or they break. it can be stacked with Willow dance.$(br) $(li)Max charge: 1 $(li)jutsu xp needed: 150 $(li)Chakra taken at max: 100"
+		},
+		{
+			"type": "text",
+			"title": "Willow dance",
+			"text": "Willow dance when used will give the player bone armor on their hands and arms which grant the user +15 damage, +5 armor toughness and +20 armor. This can be stacked with larch dance to obtain both resistance 4 and the extra damage.$(br) $(li)Max charge: 1 $(li)jutsu xp needed: 150 $(li)Chakra taken at max: 100"
+		},
+		{
+			"type": "text",
+			"title": "Cameilla dance",
+			"text": "cameilla dance upon use will grant the user a bone sword, this sword has 50 durability, 1.6 attack speed and 12 damage. $(br) $(li)Max charge: 1 $(li)jutsu xp needed: 150 $(li)Chakra taken at max: 100"
+		},
+		{
+			"type": "text",
+			"title": "Finger bone bullets",
+			"text": "Upon use of finger bone bullets the user will launch a small projectile where they are looking, this projectile does 8 damage and has no cooldown. $(br) $(li)Max charge: 1 $(li)jutsu xp needed: 150 $(li)Chakra taken at max: 5"
+		},
+		{
+			"type": "text",
+			"title": "Clemantis dance",
+			"text": "clemantis dance upon use will grant the user a bone drill, this drill has 50 durability, 0.5 attack speed and 80 damage. The drill also acts as a weak multi tool being able to quickly break blocks at around the speed of their gold variants, but being unable for blocks at stone or above to drop. $(br) $(li)Max charge: 1 $(li)jutsu xp needed: 400 $(li)Chakra taken at max: 500"
+		},
+		{
+			"type": "text",
+			"title": "Bracken dance",
+			"text": "Bracken dance upon use will summon spikes at the targeted block (has to be a block) that deal damage on contact whilst growing. the area of these spikes, their damage and the cost is affected by their charge. $(br)$(li)Max charge: all your chakra$(li)jutsu xp needed: 400$(li)Chakra taken at max: all your chakra"
+		}
 	]
 }
