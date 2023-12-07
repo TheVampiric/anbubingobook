@@ -10,7 +10,12 @@
 		{
 			"type": "text",
 			"title": "corrosion mist",
-			"text": "corrosion mist is a move that allows the user to charge up a large amount of steam that is then released in front of the user, the size, duration, damage and chakra cost of this move is dependant on the amount charged."
+			"text": "corrosion mist is a move that allows the user to charge up a large amount of steam that is then released in front of the user, the size, duration, damage and chakra cost of this move is dependant on the amount charged.$(br) $(li)Max charge: 30 $(li)jutsu xp needed: 400 $(li)Chakra taken at max: 1500"
+		},
+		{
+			"type": "text",
+			"title": "unrivaled strength",
+			"text": "unrivaled strength is a self buff that when used will grant the user extra strength, speed, jump height, punch damage, aoe damage and a lunge punch attack. the strength of these buffs and the cost scales with its charge.$(br) $(li)Max charge: 20 $(li)jutsu xp needed: 400 $(li)Chakra taken at max: 2000 $(li)Max duration: 20 seconds"
 		}
 	]
 }

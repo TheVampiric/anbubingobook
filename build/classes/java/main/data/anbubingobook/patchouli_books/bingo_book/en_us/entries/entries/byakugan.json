@@ -5,7 +5,27 @@
     "pages": [
 		{
             "type": "text",
-            "text": "Byakugan"	
-        }
+            "text": "The byakugan is one of the two dojutsu currently in the mod, it gives 15 armor and can be evolved into the byakugans version of the rinnegan known as the tenseigan. Whilst equipped the user will have permament night vision and currently contains 4 moves"			
+        },
+		{
+			"type": "text",
+			"title": "activate",
+			"text": "Whilst active 10 chakra will be drained every second, all nearby mobs will be given the glowing effect and any invisible mobs or players will be permamently glowing after the move ends. The user can also press the change jutsu key whilst it is active to zoom in. $(br) $(li)ninjaxp needed: 0$(li)cost per second: 10"
+		},
+		{
+			"type": "text",
+			"title": "8-trigrams vacuum palm",
+			"text": "vaccum palm when used will send a concentrated gust of air where the player is looking, this gust of air is capable of moving blocks such as leaves from a distance but will destroy blocks up close and has no cooldown. The damage and range of this move is dependant on the charge at the time.$(br)$(li)ninjaxp needed:500 $(li)chakra taken: dependant on charge"
+		},
+		{
+			"type": "text",
+			"title": "8-Trigrams 64 palms",
+			"text": "64 palms when used will summon a circle on the ground showing the users aproximate reach whilst stood in the centre (those near the edge will be unreachable) the user will be given extra haste, strength and resistance whilst the move is active. all other entities in the circle will gain slowness and weakness.$(br)$(li)ninjaxp needed:1000 $(li)chakra taken:100"	
+		},
+		{
+			"type": "text",
+			"title": "8-Trigrams 64 palms revolving heaven",
+			"text": "upon using revolving heaven the user will summon a sphere around themselves that will deal damage to mobs and destroy blocks, its size depends on the amount of ninja xp the user has.$(br) $(li)ninjaxp needed: 1500 $(li)chakra per second: aprox 50"
+		}
 	]
 }

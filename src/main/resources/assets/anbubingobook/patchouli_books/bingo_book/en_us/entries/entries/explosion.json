@@ -5,7 +5,17 @@
     "pages": [
 		{
             "type": "text",
-            "text": "Bomb"	
-        }
+            "text": "explosion release is the kg of earth and lightning, it currently contains 3 moves"	
+        },
+		{
+			"type": "text",
+			"title": "Landmine fist",
+			"text": "upon use of this jutsu the user will receive an effect that causes an explosion upon punching a mob, the damage,shockwave and cost of this punch is determiend by the charge of the jutsu, using the jutsu again will remove this effect. $(br) $(li)max charge: 10 $(li)jutsuxp needed: 150 $(li)chakra taken at max charge: 300 $(li)Chakra per punch at max: 190"
+		},
+		{
+			"type": "text",
+			"title": "Explosive clay",
+			"text": "Upon charging this jutsu the user will realise that holding it allows for 3 different stages (c1,c2 and c3) $(li)c1 $(li2)summons small vex like dolls that will target a mob if the user punches in their direction $(li2)chakra taken:75 $(li)C2 $(li2)Upon use of c2 the user will summon a phantom looking clay doll, this functions similar to the C1 dolls but also acts as a mount for the user $(li2)Chakra taken:150 $(li)C3 $(li2)upon using C3 a giant puppet will be created before promptly nuking its-self dealing a large area of damage $(li2)chakra taken:225 $(li)jutsuxp needed:200"
+		}
 	]
 }

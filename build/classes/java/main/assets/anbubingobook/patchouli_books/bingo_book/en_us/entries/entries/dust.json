@@ -5,7 +5,17 @@
     "pages": [
 		{
             "type": "text",
-            "text": "Dust"	
-        }
+            "text": "Dust release is the current only kekki tota in the mod, that meaning that it requires 3 releases insted of the usual 2. it is also much rarer to obtain compared to other kg and has a ninjaxp requirement of 4900 to use"			
+        },
+		{
+			"type": "text",
+			"title": "Dismantling jutsu - beam",
+			"text": "upon use of this jutsu the user will charge up a beam that fires where they aim, this beam will do heavy, rapid damage to anything hit. the damage, size and cost of the move is dependant on the charge. $(br) $(li)min charge:1 $(li) max charge: limitless $(li) chakra taken at 1: 525 $(li) jutsuxp needed: 700"
+		},
+		{
+			"type": "text",
+			"title": "dismantling jutsu - cube",
+			"text": "upon use of this jutsu the user will charge up a cube that they then launch at their target location, this jutsu can hit the user and anyone trapped inside will have slowness applied making it hard to escape. the size and damage is based on charge. $(br) $(li)min charge: 0.9 $(li)max charge: limitless $(li) chakra taken at 0.9: 300 $(li) jutsuxp needed:700"
+		}
 	]
 }

@@ -18,27 +18,22 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "mod_config"
-    },
-    {
-      "name": "DirtBlocks",
-      "type": "tag",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dirt_blocks"
-    },
-    {
-      "name": "LogBlocks",
-      "type": "tag",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "log_blocks"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "book",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    },
+    {
+      "name": "test",
+      "type": "number",
+      "scope": "global",
+      "value": "4.0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
