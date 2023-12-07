@@ -5,7 +5,27 @@
     "pages": [
 		{
             "type": "text",
-            "text": "Ice Ice Baby"	
-        }
+            "text": "Ice release is a kekki genkai that combines water and wind release that contains 4 moves"	
+        },
+		{
+			"type": "text",
+			"title": "Shattering ice spear",
+			"text": "Upon using this jutsu on a block ice spears will erupt from the ground dealing damage to any mob hit, the damage, area and cost of this jutsu scales with the charge.$(br)$(li)Max charge: limitless$(li)Chakra taken: limitless$(li)Jutsuxp needed:150"
+		},
+		{
+			"type": "text",
+			"title": "Shooting ice spears",
+			"text": "Upon using this jutsu the user will launch severl ice spears where they are looking, the number of spears, damage dealt and cost scale with charge.$(br)$(li)Max charge:50$(li)Chakra taken at max:1000$(li)Jutsuxp needed:150"
+		},
+		{
+			"type": "text",
+			"title": "Crystal ice mirrors",
+			"text": "Upon using this jutsu the area around the user will be transformed into mirrors, trapping any mob inside it. using the jutsu again will launch homing ice spears at any entity inside (except for team members).$(br)$(li)Max charge:1$(li)Chakra cost:100$(li)Chakra Cost per second:5$(li)Cost to fire spears:100$(li)Jutsuxp needed:200"
+		},
+		{
+			"type": "text",
+			"title": "Ice prison",
+			"text": "Upon using this jutsu the target mob will be quickly surrounded in ice, taking suffocation damage.$(br)$(li)Max charge:1$(li)Chakra taken:50$(li)Jutsuxp needed:150"
+		}
 	]
 }

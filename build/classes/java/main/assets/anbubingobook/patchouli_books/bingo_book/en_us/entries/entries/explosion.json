@@ -15,7 +15,16 @@
 		{
 			"type": "text",
 			"title": "Explosive clay",
-			"text": "Upon charging this jutsu the user will realise that holding it allows for 3 different stages (c1,c2 and c3) $(li)c1 $(li2)summons small vex like dolls that will target a mob if the user punches in their direction $(li2)chakra taken:75 $(li)C2 $(li2)Upon use of c2 the user will summon a phantom looking clay doll, this functions similar to the C1 dolls but also acts as a mount for the user $(li2)Chakra taken:150 $(li)C3 $(li2)upon using C3 a giant puppet will be created before promptly nuking its-self dealing a large area of damage $(li2)chakra taken:225 $(li)jutsuxp needed:200"
+			"text": "Upon charging this jutsu the user will realise that holding it allows for 3 different stages (c1,c2 and c3) $(li)c1 $(li2)summons small vex like dolls that will target a mob if the user punches in their direction $(li2)chakra taken:75"
+		},
+		{
+			"type": "text",
+			"text": "$(li)C2 $(li2)Upon use of c2 the user will summon a phantom looking clay doll, this functions similar to the C1 dolls but also acts as a mount for the user $(li2)Chakra taken:150 $(li)C3 $(li2)upon using C3 a giant puppet will be created before promptly nuking its-self dealing a large area of damage $(li2)chakra taken:225 $(li)jutsuxp needed:200"
+		},
+		{
+			"type": "text",
+			"title": "Explosive clone",
+			"text": "When this jutsu is used the user will spawn a clone that will charge a target and explode.$(br)$(li)Max charge:1$(li)Chakra taken:150$(li)Jutsuxp needed:200"
 		}
 	]
 }
