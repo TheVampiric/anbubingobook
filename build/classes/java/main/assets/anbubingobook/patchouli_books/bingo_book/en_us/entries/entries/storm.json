@@ -5,7 +5,17 @@
     "pages": [
 		{
             "type": "text",
-            "text": "average UK weather"	
-        }
+            "text": "Storm release is the kekki genkai of lightning and water release, and currently contains 2 jutsu"	
+        },
+		{
+			"type": "text",
+			"title": "Thunder cloud void wave",
+			"text": "Upon use of this jutsu the user will surround themselves with storm clouds, dealing damage to any mobs nearby.$(br) $(li)Max charge:1$(li)Chakra per second: aprox 15$(li)Jutsuxp needed:400"
+		},
+		{
+			"type": "text",
+			"title": "laser circus",
+			"text": "Upon use of this jutsu the user will gather lightning before firing it in front of themselves, the duration of which scaled with how long it is charged.$(br) $(li)Max charge: Limitless$(li)Chakra taken: Limitless$(li)Jutsuxp needed:400"
+		}
 	]
 }

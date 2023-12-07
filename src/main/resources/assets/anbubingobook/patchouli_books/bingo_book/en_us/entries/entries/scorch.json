@@ -5,7 +5,22 @@
     "pages": [
 		{
             "type": "text",
-            "text": "By far the worst KG"	
-        }
+            "text": "Scorch is the kekki genkai of fire and wind, it currently has 3 moves."			
+        },
+		{
+			"type": "text",
+			"title": "spawn scorch orb",
+			"text": "upon use of this jutsu the user will summon orbs that circle around their head, doing rapid contact damage to anything touched.$(br) $(li)Max charge:1$(li)Chakra cost:100$(li)Jutsuxp needed:150"
+		},
+		{
+			"type": "text",
+			"title": "steam kill",
+			"text": "upon use of this jutsu the user will launch one of their orbs to chase and deal damage to any mobs it makes contact with, it will only launch 1 at a time however it can be used multiple times.$(br) $(li)Max charge:1$(li)Chakra taken:50$(li)Jutsuxp needed:200"
+		},
+		{
+			"type": "text",
+			"title": "Super steam blast",
+			"text": "upon using this move the user will combine all of their orbs into one before launching it where they are aiming$(br) $(li)Max charge:1$(li)Chakra taken:50$(li)Jutsuxp needed:250"
+		}
 	]
 }

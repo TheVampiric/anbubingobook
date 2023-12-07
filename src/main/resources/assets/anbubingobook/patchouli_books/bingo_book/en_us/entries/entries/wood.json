@@ -5,7 +5,32 @@
     "pages": [
 		{
             "type": "text",
-            "text": "I'm not making that joke"	
-        }
+            "text": "Wood is the kekki genkai of earth and water release, it is unique for a few reasons. Firstly it cannot be obtained the same as other kekki genkai.To obtain wood you must eat and survive zetsu flesh with earth and water release in your inventory, if keepinv or keepninja xp is enabled this will be a 1% chance, otherwise it is 10%. Wood release grants saturation while in your inventory and currently has 5 jutsu"			
+        },
+		{
+			"type": "text",
+			"title": "Wood burial",
+			"text": "Upon using this jutsu, tree roots will sprout from the ground and surround the target, crushing and trapping them in place.$(br) $(li)Max charge:1 $(li)Chakra taken:100$(li)Jutsuxp needed:1000"
+		},
+		{
+			"type": "text",
+			"title": "Four pillar prison",
+			"text": "Upon using this jutsu, the target mob will be trapped inside a cage of wooden fences, they will also be temporarily stunned, the size of the cage is dependant on the charge.$(br) $(li)Max charge:40$(li)Max chakra taken:2000$(li)Jutsuxp needed:1000"
+		},
+		{
+			"type": "text",
+			"title": "Four pillar house",
+			"text": "Upon using this jutsu a wooden mansion will be created, Note that this jutsu will only work if mob griefing is enabled.$(br) $(li)Max charge:1	$(li)Chakra taken:100$(li)Jutsuxp needed:1000"
+		},
+		{
+			"type": "text",
+			"title": "Wood golem",
+			"text": "Upon use of this jutsu, the user will summon a golem made of wood that they are able to control and fight using.$(br) $(li)Max charge:1 $(li)Chakra taken:1000 $(li)Chakra per second:50$(li)Jutsuxp needed:2000"
+		},
+		{
+			"type": "text",
+			"title": "Big forest jutsu",
+			"text": "Upon use of this jutsu the user will send out wooden beams to crush and hold mobs, whilst being held they are kept at the same position compared to the user.$(br) $(li)Max charge:1$(li)Chakra taken:50$(li)Jutsuxp needed:1000"
+		}
 	]
 }
