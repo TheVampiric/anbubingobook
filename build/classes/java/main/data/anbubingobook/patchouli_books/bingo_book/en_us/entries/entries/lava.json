@@ -5,7 +5,22 @@
     "pages": [
 		{
             "type": "text",
-            "text": "Lava"	
-        }
+            "text": "Lava is the kekki genkai of fire and earth release and currently contains 3 moves. However, only 2 will normally be unlocked as the third is exclusive to the 4 tails jinchuriki"	
+        },
+		{
+			"type": "text",
+			"title": "Scorching rocks",
+			"text": "upon using this jutsu the user will launch a ball of molten rock where they are looking. This ball will deal damage to blocks as well as set blocks and mobs on fire.$(br) $(li)Max charge:20$(li)Chakra taken at max charge:800$(li)Jutsuxp needed:200"
+		},
+		{
+			"type": "text",
+			"title": "Lava melting rock",
+			"text": "upon using this jutsu the user will spray out lava in the direction they are facing, this will place lava source blocks that will quickly turn into obsidian and after a short delay vanish.$(br) $(li)max charge:10$(li)Chakra taken at max:500$(li)Jutsuxp needed:200"
+		},
+		{
+			"type": "text",
+			"title": "Lava chakra mode",
+			"text": "This is the 4 tails exclusive jutsu, upon use the user will be surrounded in a cloak that enhances the users speed and gives strength, it also deals damage to nearby mobs.$(br) $(li)Max charge:1$(li)Chakra taken per second:10$(li)Jutsuxp needed:250"
+		}
 	]
 }

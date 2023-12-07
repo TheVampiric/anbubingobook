@@ -5,7 +5,32 @@
     "pages": [
 		{
             "type": "text",
-            "text": "Magnet"	
-        }
+            "text": "Magnet is the kekki genkai of earth and wind release. Upon obtaining this kekki genkai the user will be given a gourd that must be equipped to use the jutsu (unless they are the 1 tails jin in the jin cloak) and grants resistance 3. By default this gourd is iron sand but the 1 tails jin will obtain a normal sand one (cosmetic change). Magnet currently has 5 jutsu"	
+        },
+		{
+			"type": "text",
+			"title": "Shield of sand",
+			"text": "upon using this jutsu the user will be locked in place and become immune to most attacks, blocking it with sand. $(br) $(li)Max charge:1$(li)Chakra taken per second:5$(li)Jutsuxp needed:150"
+		},
+		{
+			"type": "text",
+			"title": "Sand bullet barrage",
+			"text": "upon using this jutsu the user will begin to draw sand from their gourd before firing it when they release, the amount of projectiles and damage of this jutsu scales with the charge.$(br) $(li)Max charge:5$(li)Chakra taken at max charge:100$(li)Jutsuxp needed:100"
+		},
+		{
+			"type": "text",
+			"title": "sand binding",
+			"text": "Upon using this jutsu on a target they will become encased in sand, punching whilst looking at the mob but outside of punching distance will cause the sand to collapse, crushing the mob.$(br) $(li)Max charge:1$(li)Chakra taken:100 to encase, 50 to collapse$(li)jutsuxp needed:200"
+		},
+		{
+			"type": "text",
+			"title": "Sand levitation",
+			"text": "Upon use this jutsu will summon a platform that the user will mount and be able to fly around on.$(br) $(li)Max charge:1$(li)Chakra per second: aprox 5$(li)Jutsuxp needed:200"
+		},
+		{
+			"type": "text",
+			"title": "Sand gathering",
+			"text": "Upon use this jutsu will summon a pyramid in the air, using the jutsu again will cause the pyramid to crash into the target location, dealing damage. after some time it will explode.$(br) $(li)Max charge:1$(li)Chakra taken:100$(li)Jutsuxp needed:200"
+		}
 	]
 }
