@@ -5,7 +5,30 @@
     "pages": [
 		{
             "type": "text",
-            "text": "reversal red eyes"	
-        }
+            "text": "The sharingan is one of the two dojutsu currently in the mod, the base sharingan does not have any jutsu however grants 50% dodge chance, gives glowing to nearby invisible mobs and gives the wearer +10 armor"	
+        },
+		{
+			"type": "text",
+			"title": "evolutions",
+			"text": "The sharingan has mutliple evolution stages, to evolve the base sharingan to the mangekyo sharingan you need to have 1000 ninja xp and be within around 10 blocks as a team member (via the team scroll) dies.To evolve the ms into the ems you need to have a medical ninja combine the ms of two different players (or one player and one itachi) in a medical scroll. Finally eating zetsu flesh with the ems and ems advancement will grant the user the rinnegan."
+		},
+		{
+			"type": "text",
+			"title": "Mangekyo sharingan",
+			"text": "There are two different MS sharingans that the player may obtain, being the kamui and amaterasu eyes. Both however will have the susanoo and provide +10 armor and +1 armor toughness. The MS also has limited durability.$(li)Amaterasu$(li2)special jutsu key 1 will allow the user to place black flames that burn for multiple minutes around, holding shift whilst and tapping the move will allow the user to remove it."
+		},
+		{
+			"type": "text",
+			"text": "$(li)Kamui $(li2)Intangability allows the user to fly, avoid damage, void potion effects and phase through blocks. $(li2)Using the teleport move on a mob will send them to the kamui dimension, looking straight down will send the user."
+		},
+		{
+			"type": "text",
+			"title": "EMS",
+			"text": "The ems is a direct upgrade to either MS, it allows the user to use both kamui and amaterasu jutsu. It also removes the durability restriction and grants the user +10 armor and +2 armor toughness"
+		},
+		{
+			"type": "image",
+			"images": ["anbubingobook:textures/items/sharingan.png","anbubingobook:textures/items/kamui.png","anbubingobook:textures/items/amaterasu.png","anbubingobook:textures/items/ems.png"]
+		}
 	]
 }
