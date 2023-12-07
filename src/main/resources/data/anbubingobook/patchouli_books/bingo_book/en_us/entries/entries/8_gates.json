@@ -5,7 +5,7 @@
     "pages": [
 		{
             "type": "text",
-            "text": "The 8 gates can be obtained via completeing might guys quest, to spawn might guy you must have a village in a 'foresty' biome with at least 20 doors and 10 villagers $(br)Upon spawning he will announce it in chat to the players in that village, the players then need to right click him to get his quest and"	
+            "text": "The 8 gates can be obtained via completeing might guys quest, to spawn might guy you must have a village in a 'foresty' biome with at least 20 doors and 10 villagers $(br)Upon spawning he will announce it in chat to the players in that village, the players then need to right click him to get his quest, the following midnight you will need to defend the villagers and get more kills than guy, if you get less kills or any villagers die you will fail and need to do it again."	
         }
 	]
 }
