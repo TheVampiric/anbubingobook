@@ -3,6 +3,7 @@
   "name": "patchouli:book",
   "pools": [
     {
+	  "name": "gimmie",
       "rolls": 1,
       "entries": [
         {
