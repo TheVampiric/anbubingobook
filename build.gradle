@@ -54,6 +54,11 @@ sourceSets {
 }
 
 repositories {
+	
+   flatDir {
+        dirs 'libs'
+    }
+	
     maven {
         url "https://cursemaven.com"
     }
@@ -63,8 +68,9 @@ repositories {
 dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2855'
 
-    runtimeOnly fg.deobf("curse.maven:narutomod-831157:4767054")
+    fg.deobf("curse.maven:narutomod-831157:4767054")
     runtimeOnly fg.deobf("curse.maven:Patchouli-306770:3162874")
+    implementation name: 'narutomod_deobfu'
 }
 
 apply from: 'mcreator.gradle'

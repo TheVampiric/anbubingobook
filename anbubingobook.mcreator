@@ -18,15 +18,6 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "mod_config"
-    },
-    {
-      "name": "Book",
-      "type": "recipe",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "book"
     }
   ],
   "variable_elements": [

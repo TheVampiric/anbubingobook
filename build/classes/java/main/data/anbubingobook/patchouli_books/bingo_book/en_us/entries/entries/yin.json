@@ -5,7 +5,22 @@
     "pages": [
 		{
             "type": "text",
-            "text": "I like pizza"	
-        }
-	]
+            "text": "Yin is not a kekki genkai, this means to obtain it you must first obtain a jutsu for it.At which point the mod will give you the item.Yin currently has 3 jutsu."	
+        },
+		{
+			"type": "text",
+			"title": "genjutsu",
+			"text": "Upon using this jutsu, the target mob will be locked in place, given blindness and see a phantom image of the user walking towards them.It does no damage directly and there is no way to counter it.$(br) $(li)Max charge:1$(li)Chakra taken:300$(li)Jutsuxp needed:500"
+		},
+		{
+			"type": "text",
+			"title": "Mind body transfer",
+			"text": "Upon using this jutsu the user will leave their body and fly a short distance in the direction they used the jutsu, upon hitting a mob this will allow the user to control this mobs movements.This also works on players however in some cases may not work as intenede.$(br) $(li)Max charge:1$(li)Chakra taken:Unkown$(li)Jutsuxp needed:375"
+		},
+		{
+			"type": "text",
+			"title": "Shadow imitation",
+			"text": "Upon using this jutsu the user will send their shadow out towards their target, upon contact they will assume control of the targets movements and attacks (Use special jutsu key 2 to cancel).$(br) $(li)Max charge:1$(li)Chakra taken:100$(li)Jutsuxp needed:500"
+		}
+		]
 }

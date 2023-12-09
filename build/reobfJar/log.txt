@@ -1,5 +1,6 @@
 Args: "--in-jar", "C:\Users\PABELL\Desktop\AHZ naruto\backup\anbubingobook\build\libs\modid-1.0.jar", "--out-jar", "C:\Users\PABELL\Desktop\AHZ naruto\backup\anbubingobook\build\reobfJar\output.jar", "--srg-in", "C:\Users\PABELL\Desktop\AHZ naruto\backup\anbubingobook\build\createMcpToSrg\output.tsrg", "--live"
 Classpath: C:\Users\PABELL\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\md-5\SpecialSource\1.8.3\SpecialSource-1.8.3-shaded.jar
+Classpath: C:\Users\PABELL\Desktop\AHZ naruto\backup\anbubingobook\libs\narutomod_deobfu.jar
 Classpath: C:\Users\PABELL\.mcreator\gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.12.2-14.23.5.2855_mapped_snapshot_20171003-1.12\forge-1.12.2-14.23.5.2855_mapped_snapshot_20171003-1.12-recomp.jar
 Classpath: C:\Users\PABELL\.mcreator\gradle\caches\forge_gradle\minecraft_repo\versions\1.12.2\client-extra.jar
 Classpath: C:\Users\PABELL\.mcreator\gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.1\f7be08ec23c21485b9b5a1cf1654c2ec8c58168d\jsr305-3.0.1.jar
