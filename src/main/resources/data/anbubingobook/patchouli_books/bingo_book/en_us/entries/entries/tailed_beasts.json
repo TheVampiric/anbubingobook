@@ -1,11 +1,30 @@
 {
     "name": "Tailed Beasts",
-    "icon": "narutomod:futton",
+    "icon": "anbubingobook:textures/items/logo.png",
     "category": "anbubingobook:tailed_beasts",
     "pages": [
 		{
             "type": "text",
-            "text": "tuberculosis"	
-        }
+            "text": "Tailed beasts are late game power ups that can be obtained via sealing or be obtained via a very rare chance in place of a kekki genkai. All tailed beasts have 3 stages and are equal in power with only visual differences (except for the 10 tails and its jin). Some tailed beasts however give kg such as the 1, 4 and 5 tails giving magnet, lava and boil. And the 4 tails unlocking lava cloak"	
+		},
+		{
+			"type": "text",
+			"text": "Every second the player is in a stage, that stage will gain 1 xp (visible by hovering over the chestplate in the inventory). To ascened a stage the player must have enough jutsu xp and ninjaxp to handle the extra chakra (as 4x your max will result in death) and then press the change jutsu key. If it says you are too weak that means you need more ninja xp, as you dont have enough chakra space"
+		},
+		{
+			"type": "text",
+			"title": "stage 1",
+			"text": "Stage 1 will present its self as a faint red aura that surrounds the player, except for the 1 tails which looks different in this stage, at first the player will not be able to control it and will go beserk until they obtain 400 xp. During this stage they receive 20 melee damage, dash when attempting to hit a mob out of reach, regen, 5000 Extra chakra, extra health and 3072 armor.This is the only stage to have a set ninjaxp requirement of 2.5k"
+		},
+		{
+			"type": "text",
+			"title": "stage 2",
+			"text": "Stage 2 will present its self as a dark red aura with a glowing white face (when mastered the 9 tails jin gets a visual change) To access this stage the user needs 3600 in stage 1, and to control it they need 400 xp. During this stage they obtain upgraded versions of all stage 1 buffs alongside the ability to use the tailed beast bomb with special jutsu key 3"
+		},
+		{
+			"type": "text",
+			"title": "stage 3",
+			"text": "Stage 3 will put the player in control of the full tailed beast form, During which the player will be able to control the tailed beasts movements and attacks, there is no beserk form for this stage. The duration of this stage depends on the xp in this stage and the bomb is replaced for a non-chargeable version"
+		}
 	]
 }

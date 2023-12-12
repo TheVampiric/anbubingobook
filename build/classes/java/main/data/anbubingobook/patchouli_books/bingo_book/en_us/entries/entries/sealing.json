@@ -1,0 +1,36 @@
+{
+    "name": "Sealing",
+    "icon": "anbubingobook:textures/items/logo.png",
+    "category": "anbubingobook:tailed_beasts",
+    "pages": [
+	{
+		"type": "text",
+		"text": "currently there are 3 sealing jutsu and one command for sealing in the mod, all except for sealing into the gedo statue either require multiple players or creative mode."
+	},
+	{
+		"type": "image",
+		"title": "Four corner seal",
+		"images": ["anbubingobook:textures/items/fcs.png"],
+		"text": "First clear out a flat 13x13 area and place torches as shown, then use the jutsu on the central block"
+	},
+	{
+		"type": "text",
+		"text": "Upon using the jutsu on the central block a central platform and four outer circles will be summoned, the person who is becoming a jin must sit on the central platform and at least 1 other player must sit on the outer circles. To being sealing the tailed beast must be close to the platform and at 1000 hp or less, at which point it will begin (note that if either the soon to be jin or all helpers leave the sealing will restart). More people speed up the seal."
+	},
+	{
+		"type": "text",
+		"title": "Gedo sealing",
+		"text": "To seal into the gedo statue (turning it into the 10 tails when all 9 tailed beasts are sealed inside) the player must use the nine phantom dragons sealing jutsu (Given upon obtaining the rinnegan or tenseigan) on a tailed beast that is 1000 hp or less and right click to mount the gedo and start the seal. More people speed up the seal (to solo seal into the gedo takes 30 minutes)"
+	},
+	{
+		"type": "text",
+		"title": "Adamantine chains",
+		"text": "This jutsu allows the user to become a jin without help, but only if the user is in creative mode at the time. Whilst in creative mode use the chains multiple times on a tailed beast at any health and it will begin to quickly seal into the user"
+	},
+	{
+		"type": "text",
+		"title": "command",
+		"text": "The command is as follows, if there is no error in chat then it worked and can be checked by changing assign to list and removing the player and tail number $(li)/locateEntity jinchuriki assign (player) (tail number)"
+	}
+  ]
+}

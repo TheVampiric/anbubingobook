@@ -1,0 +1,15 @@
+{
+    "name": "FAQ",
+    "icon": "minecraft:writable_book",
+    "category": "anbubingobook:starting",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(li)Q:How do i charge chakra?'$(li2)A:Stand still, eat pills or sleep$(li)Q:'How do i obtain the ms / ems in singleplayer?'$(li2)A:You cant obtain your own, you would need to cheat/ spawn it in$(li)Q:'Why does eating zetsu flesh kill me?'$(li2)A:It does between 24 and 240 damage at random unless you have the ms / ems equipped"
+        },
+		{
+			"type": "text",
+			"text": "$(li)Q:'Can i become a jin in singleplayer?' $(li2)A:Only via obtaining it in place of a kg"
+		}
+    ]
+}

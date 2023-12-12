@@ -5,7 +5,37 @@
     "pages": [
 		{
             "type": "text",
-            "text": "Earth"	
-        }
+            "text": "Earth release is a basic nature, this means that it can be unlocked via using a scroll containing a earth jutsu."	
+        },
+		{
+			"type": "text",
+			"title": "Hiding in rock",
+			"text": "Upon use of this jutsu the user will gain the temporary ability to jump in the air and phase through blocks. This only lasts a few seconds and does not prevent damage it also has an inital chakra cost followed by a small drain.$(br)$(li)Max charge:1$(li)Inital chakra taken:20 $(li)Chakra taken in total:50 $(li)Jutsuxp needed:150"
+		},
+		{	
+			"type": "text",
+			"title": "Earth wall",
+			"text": "Upon use of this jutsu a wall will rise from the target area the player is looking at, the size of the wall scales with the charge.$(br) $(li)Max charge:50$(li)Max chakra taken:1000$(li)Jutsuxp needed:200"
+		},
+		{
+			"type": "text",
+			"title": "Earth sandwich",
+			"text": "Upon use of this jutsu the earth will rise up and crush anyone (user included) that gets caught by it. Anything that survives will be stunned for a long duration and the size and damage scale with charge.$(br)$(li)Max charge:20$(li)Max chakra cost:2000$(li)Jutsuxp needed:200"
+		},
+		{
+			"type": "text",
+			"title": "Swamp of the underworld",
+			"text": "Upon use of this jutsu the user will summon a mud pool, any mobs that fall into this will become trapped in the mud and begins to drown. the size and depth of the mud scales with charge, and water will displace the mud.$(br)$(li)Max charge:30$(li)Max chakra taken:3000$(li)Jutsuxp needed:250"
+		},
+		{
+			"type": "text",
+			"title": "Earth flow spears",
+			"text": "Upon use of this jutsu, sharp spikes of earth will erupt from the ground, dealing damage to any mobes that they touch whilst doing so.$(br)$(li)Max charge:Limitless$(li)Chakra taken:Limitless$(li)Jutsuxp needed:150"
+		},
+		{
+			"type": "text",
+			"title": "Earth golem",
+			"text": "Upon use of this jutsu the user will summon a golem made of earth to help them fight, the damage, health and size of the golem scale with charge and can be mounted at 2 or greater charge.$(br)$(li)Max charge:5$(li)Max chakra taken:500$(li)Jutsuxp needed:200"
+		}
 	]
 }
