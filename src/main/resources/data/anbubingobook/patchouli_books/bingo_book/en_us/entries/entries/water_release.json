@@ -5,7 +5,12 @@
     "pages": [
 		{
             "type": "text",
-            "text": "INFO TO BE ADDED"	
-        }
+            "text": "Water release is a nature release, this means the player can start with it (at which point it will have reduced jutsu xp costs) or unlock it via obtaining a water jutsu from a scroll"	
+        },
+		{
+			"type": "text",
+			"title": "Hiding in mist",
+			"text": "Upon use of this jutsu the user will summon fog around them making the player hard to see. all mobs inside will be given glowing.($li)Max charge:1$(li)Chakra taken:100$(li)Jutsuxp needed: 200"
+		}
 	]
 }

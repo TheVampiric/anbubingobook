@@ -1,0 +1,7 @@
+{
+  "_fv": 18,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable type=\"Number\" id=\"enchant_levels\">enchant_levels</variable><variable type=\"MCItem\" id=\"emeralds\">emeralds</variable><variable type=\"MCItem\" id=\"tool\">tool</variable></variables><block type=\"event_trigger\" deletable=\"false\" x=\"129\" y=\"15\"><field name=\"trigger\">command_executed</field></block></xml>"
+  }
+}
