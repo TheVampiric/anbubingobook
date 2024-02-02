@@ -18,6 +18,27 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "mod_config"
+    },
+    {
+      "name": "Evolve",
+      "type": "command",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "evolve"
+    },
+    {
+      "name": "EvolveCommandExecuted",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "evolve_command_executed",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
