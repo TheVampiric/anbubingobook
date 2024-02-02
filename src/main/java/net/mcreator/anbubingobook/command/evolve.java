@@ -2,6 +2,8 @@ package net.mcreator.anbubingobook.command;
 
 import net.mcreator.anbubingobook.ElementsAnbubingobookMod;
 import net.minecraft.command.CommandException;
+import net.minecraft.nbt.NBTBase;
+import net.minecraftforge.common.util.Constants;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.mcreator.anbubingobook.procedure.procedureevolve;
 
@@ -63,7 +65,14 @@ public class evolve extends ElementsAnbubingobookMod.ModElement {
 
         @Override
         public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException {
-            Entity entity = getEntity(server, sender, args[0]);
+            Entity entity = getCommandSenderAsPlayer(sender);
+
+
+            String UUIM = entity.getEntityData().getString("OwnerIdMost");
+            String UUIL = entity.getEntityData().getString("OwnerIdLeast");
+
+
+
             Map<String, Object> dependencies = new HashMap<>();
             dependencies.put("entity", entity);
             procedureevolve.executeProcedure(dependencies);
