@@ -2,26 +2,17 @@ package net.mcreator.anbubingobook.procedure;
 
 import net.mcreator.anbubingobook.ElementsAnbubingobookMod;
 import net.minecraft.entity.Entity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.advancements.AdvancementProgress;
-import net.minecraft.advancements.Advancement;
-import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldServer;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.server.MinecraftServer;
-
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.*;
 import net.minecraftforge.items.ItemHandlerHelper;
+import net.narutomod.item.ItemMangekyoSharingan;
+import net.narutomod.item.ItemMangekyoSharinganObito;
+
 
 import java.util.Map;
-
-import static net.minecraft.command.CommandBase.getItemByText;
-
-import net.narutomod.item.ItemMangekyoSharinganObito;
-import net.narutomod.item.ItemMangekyoSharingan;
-import net.narutomod.item.ItemSharingan;
+import java.util.UUID;
+import java.util.Random;
 
 @ElementsAnbubingobookMod.ModElement.Tag
 public class procedureevolve extends ElementsAnbubingobookMod.ModElement {
@@ -38,9 +29,15 @@ public class procedureevolve extends ElementsAnbubingobookMod.ModElement {
 
 
         Entity entity = (Entity) dependencies.get("entity");
-        ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
+
+        long UUIDMost = entity.getUniqueID().getMostSignificantBits();
+        long UUIDLeast = entity.getUniqueID().getLeastSignificantBits();
+        long color = (long) (Math.random() * 888888888 + 111111111);
+
 
         ItemStack mangekyo = ItemStack.EMPTY;
+
+
 
 
         if ((Math.random() < 0.5)) {
@@ -51,6 +48,18 @@ public class procedureevolve extends ElementsAnbubingobookMod.ModElement {
         ItemStack _setstack = (mangekyo);
 
         _setstack.setCount(1);
+        _setstack.setTagInfo("player_idMost", new NBTTagLong(UUIDMost));
+        _setstack.setTagInfo("player_idLeast", new NBTTagLong(UUIDLeast));
+        _setstack.setTagInfo("color", new NBTTagLong(color));
         ItemHandlerHelper.giveItemToPlayer(((EntityPlayer) entity), _setstack);
+
+
+
+
+
+
+
+
+
     }
 }

@@ -1,27 +1,21 @@
 package net.mcreator.anbubingobook.command;
 
 import net.mcreator.anbubingobook.ElementsAnbubingobookMod;
-import net.minecraft.command.CommandException;
-import net.minecraft.nbt.NBTBase;
-import net.minecraftforge.common.util.Constants;
-import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.mcreator.anbubingobook.procedure.procedureevolve;
-
-import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.entity.Entity;
-import net.minecraft.command.ICommandSender;
 import net.minecraft.command.CommandBase;
+import net.minecraft.command.CommandException;
+import net.minecraft.command.ICommandSender;
+import net.minecraft.entity.Entity;
+import net.minecraft.nbt.NBTBase;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.util.math.BlockPos;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
-import net.narutomod.procedure.ProcedureAddNinjaXpCommandExecuted;
-import net.narutomod.ElementsNarutomodMod;
-
-import java.util.Map;
-import java.util.List;
-import java.util.HashMap;
-import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @ElementsAnbubingobookMod.ModElement.Tag
 public class evolve extends ElementsAnbubingobookMod.ModElement {
@@ -68,8 +62,6 @@ public class evolve extends ElementsAnbubingobookMod.ModElement {
             Entity entity = getCommandSenderAsPlayer(sender);
 
 
-            String UUIM = entity.getEntityData().getString("OwnerIdMost");
-            String UUIL = entity.getEntityData().getString("OwnerIdLeast");
 
 
 
