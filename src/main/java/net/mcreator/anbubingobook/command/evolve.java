@@ -6,6 +6,7 @@ import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTBase;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.server.MinecraftServer;
@@ -54,19 +55,18 @@ public class evolve extends ElementsAnbubingobookMod.ModElement {
 
         @Override
         public String getUsage(ICommandSender target) {
-            return "/evolve <target> <integer>";
+            return "/evolve <target>";
         }
 
         @Override
         public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException {
-            Entity entity = getCommandSenderAsPlayer(sender);
 
-
-
-
-
+            EntityPlayer player;
             Map<String, Object> dependencies = new HashMap<>();
-            dependencies.put("entity", entity);
+            player = getPlayer(server, sender, args[0]);
+            
+
+            dependencies.put("entity", player);
             procedureevolve.executeProcedure(dependencies);
 
         }
