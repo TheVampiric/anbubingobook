@@ -63,8 +63,16 @@ public class evolve extends ElementsAnbubingobookMod.ModElement {
 
             EntityPlayer player;
             Map<String, Object> dependencies = new HashMap<>();
-            player = getPlayer(server, sender, args[0]);
-            
+
+            if (args.length == 0) {
+                player = getCommandSenderAsPlayer(sender);
+            }
+            else {
+                player = getPlayer(server, sender, args[0]);
+            }
+
+
+
 
             dependencies.put("entity", player);
             procedureevolve.executeProcedure(dependencies);

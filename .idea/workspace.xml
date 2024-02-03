@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5227eeac-cb90-40cf-881c-6441ab6ef7ef" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/modid-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/modid-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reobfJar/output.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/reobfJar/output.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/command/evolve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/command/evolve.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
