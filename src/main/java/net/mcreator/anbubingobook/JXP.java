@@ -17,7 +17,8 @@
 */
 package net.mcreator.anbubingobook;
 
-import net.minecraftforge.common.config.Config;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -26,25 +27,29 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.World;
+import net.narutomod.item.ItemJutsu;
 
 import java.util.Random;
-import net.narutomod.*;
 
-@Config(modid = AnbubingobookMod.MODID)
 @ElementsAnbubingobookMod.ModElement.Tag
-public class ModConfig extends ElementsAnbubingobookMod.ModElement	 {
+public class JXP extends ElementsAnbubingobookMod.ModElement {
 	/**
 	 * Do not remove this constructor
 	 */
-	public ModConfig(ElementsAnbubingobookMod instance) {
-		super(instance, 3);
+	public JXP(ElementsAnbubingobookMod instance) {
+		super(instance, 7);
 	}
 
-	@Config.Comment("Ninja xp multiplier, multiplier is not exact")
-	public static double Ninja_XP_MULTI = 0.0;
-
-
-	@Config.Comment("Jutsu xp amount changer, setting it to 2 = 2 jutsu xp per hit")
-	public static int Jutsu_XP_MULTI = 1;
-
+	public static void logBattleXP(EntityPlayer player) {
+		ItemStack stack = player.getHeldItemMainhand();
+		if (!(stack.getItem() instanceof ItemJutsu.Base)) {
+			stack = player.getHeldItemOffhand();
+		}
+		if (stack.getItem() instanceof ItemJutsu.Base) {
+			ItemJutsu.Base baseitem = (ItemJutsu.Base)stack.getItem();
+			if (baseitem.getCurrentJutsuXp(stack) < baseitem.getCurrentJutsuRequiredXp(stack)) {
+				baseitem.addCurrentJutsuXp(stack, ModConfig.Jutsu_XP_MULTI);
+			}
+		}
+	}
 }

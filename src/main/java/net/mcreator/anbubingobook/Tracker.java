@@ -94,7 +94,7 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
     }
 
     public static void addBattleXp(EntityPlayer entity, double xp) {
-        addBattleXp(entity, xp, true);
+        addBattleXp(entity, (xp*ModConfig.Ninja_XP_MULTI), true);
     }
 
     private static void addBattleXp(EntityPlayer entity, double xp, boolean sendMessage) {
@@ -114,7 +114,7 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
                 && ProcedureUtils.advancementAchieved((EntityPlayerMP)entity, "narutomod:ninjaachievement")) {
             addBattleXp((EntityPlayerMP)entity, xp);
             ItemEightGates.logBattleXP(entity);
-            ItemJutsu.logBattleXP(entity);
+            JXP.logBattleXP(entity);
             //EntityTracker.getOrCreate(entity).lastLoggedXpTime = entity.ticksExisted;
             entity.getEntityData().setInteger("lastLoggedXpTime", entity.ticksExisted);
         }
@@ -283,7 +283,7 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
             if (!targetEntity.equals(sourceEntity) && sourceEntity instanceof EntityLivingBase && amount > 0f) {
                 if (this.isOffCooldown(targetEntity) && targetEntity instanceof EntityPlayer && amount < ((EntityPlayer)targetEntity).getHealth()) {
                     double bxp = getBattleXp((EntityPlayer)targetEntity);
-                    logBattleExp((EntityPlayer)targetEntity, bxp < 1d ? 1d : ((amount / MathHelper.sqrt(MathHelper.sqrt(bxp))))*ModConfig.Ninja_XP_MULTI);
+                    logBattleExp((EntityPlayer)targetEntity, bxp < 1d ? 1d : ((amount / MathHelper.sqrt(MathHelper.sqrt(bxp)))));
                 }
                 if (sourceEntity instanceof EntityPlayer) {
                     double xp = 0.0d;
@@ -294,7 +294,7 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
                                 ? target.getActivePotionEffect(MobEffects.RESISTANCE).getAmplifier() + 2 : 1;
                         double x = MathHelper.sqrt(target.getMaxHealth() * ProcedureUtils.getModifiedAttackDamage(target)
                                 * MathHelper.sqrt(ProcedureUtils.getArmorValue(target)+1d) * Math.min(resistance, 6));
-                        xp = Math.min(x * Math.min(amount / target.getMaxHealth(), 1f) * ModConfig.Ninja_XP_MULTI, 60d);
+                        xp = Math.min(x * Math.min(amount / target.getMaxHealth(), 1f), 60d);
                         xp *= sourceEntity.getEntityData().hasKey("VEZx") ? sourceEntity.getEntityData().getDouble("VEZx") : 0.5d;
                     }
                     if (xp > 0d) {

@@ -59,13 +59,13 @@
       "registry_name": "tracker"
     },
     {
-      "name": "Jutsuxpchanges",
+      "name": "JXP",
       "type": "code",
       "sortid": 7,
       "compiles": true,
       "locked_code": true,
       "ids": {},
-      "registry_name": "jutsuxpchanges"
+      "registry_name": "jxp"
     }
   ],
   "variable_elements": [
