@@ -39,6 +39,33 @@
       "metadata": {
         "dependencies": []
       }
+    },
+    {
+      "name": "DNA",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "dna"
+    },
+    {
+      "name": "Tracker",
+      "type": "code",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "tracker"
+    },
+    {
+      "name": "Jutsuxpchanges",
+      "type": "code",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "jutsuxpchanges"
     }
   ],
   "variable_elements": [
@@ -58,6 +85,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.dna.name": "DNA",
       "item.bingo_book.name": "Bingo Book"
     }
   },

@@ -17,6 +17,7 @@
 */
 package net.mcreator.anbubingobook;
 
+import net.minecraftforge.common.config.Config;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -29,7 +30,7 @@ import net.minecraft.world.World;
 import java.util.Random;
 import net.narutomod.*;
 
-
+@Config(modid = AnbubingobookMod.MODID)
 @ElementsAnbubingobookMod.ModElement.Tag
 public class ModConfig extends ElementsAnbubingobookMod.ModElement	 {
 	/**
@@ -39,27 +40,11 @@ public class ModConfig extends ElementsAnbubingobookMod.ModElement	 {
 		super(instance, 3);
 	}
 
-	@Override
-	public void initElements() {
-	}
+	@Config.Comment("Ninja xp multiplier, multiplier is additive")
+	public static double Ninja_XP_MULTI = 200.0;
 
-	@Override
-	public void init(FMLInitializationEvent event) {
-	}
 
-	@Override
-	public void preInit(FMLPreInitializationEvent event) {
-	}
+	@Config.Comment("Jutsu xp amount changer, 1 = 2 jutsu xp per hit")
+	public static double Jutsu_XP_MULTI = 10;
 
-	@Override
-	public void generateWorld(Random random, int posX, int posZ, World world, int dimID, IChunkGenerator cg, IChunkProvider cp) {
-	}
-
-	@Override
-	public void serverLoad(FMLServerStartingEvent event) {
-	}
-
-	@Override
-	public void registerModels(ModelRegistryEvent event) {
-	}
 }

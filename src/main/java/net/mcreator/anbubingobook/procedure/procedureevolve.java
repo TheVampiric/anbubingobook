@@ -1,17 +1,29 @@
 package net.mcreator.anbubingobook.procedure;
 
 import net.mcreator.anbubingobook.ElementsAnbubingobookMod;
+import net.minecraft.advancements.AdvancementList;
+import net.minecraft.advancements.AdvancementManager;
+import net.minecraft.client.entity.EntityOtherPlayerMP;
+import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.*;
 import net.minecraft.world.WorldServer;
+import net.minecraftforge.event.entity.living.LivingDamageEvent;
+import net.minecraftforge.fml.common.eventhandler.EventPriority;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.items.ItemHandlerHelper;
+import net.narutomod.NarutomodMod;
+import net.narutomod.item.ItemEightGates;
+import net.narutomod.item.ItemJutsu;
 import net.narutomod.item.ItemMangekyoSharingan;
 import net.narutomod.item.ItemMangekyoSharinganObito;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.World;
+import net.minecraft.util.ResourceLocation;
+
 
 
 import java.util.Map;
@@ -47,8 +59,6 @@ public class procedureevolve extends ElementsAnbubingobookMod.ModElement {
         ItemStack mangekyo = ItemStack.EMPTY;
 
 
-
-
         if ((Math.random() < 0.5)) {
             mangekyo = new ItemStack(ItemMangekyoSharingan.helmet, (int) (1));
         } else {
@@ -61,20 +71,8 @@ public class procedureevolve extends ElementsAnbubingobookMod.ModElement {
         _setstack.setTagInfo("player_idLeast", new NBTTagLong(UUIDLeast));
         _setstack.setTagInfo("color", new NBTTagLong(color));
         _setstack.setTagInfo("display", new NBTTagString(name));
-        ItemHandlerHelper.giveItemToPlayer(entity, _setstack);
-
+        ItemHandlerHelper.giveItemToPlayer((EntityPlayer) entity, _setstack);
         net.narutomod.procedure.ProcedureUtils.grantAdvancement(entity, "narutomod:mangekyosharinganopened", false);
-
-
-
-
-
-
-
-
-
-
-
 
 
     }
