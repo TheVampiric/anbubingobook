@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5227eeac-cb90-40cf-881c-6441ab6ef7ef" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anbubingobook.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/anbubingobook.mcreator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/ModConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/ModConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/modid-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/modid-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reobfJar/output.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/reobfJar/output.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/ModConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/ModConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/Tracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/Tracker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

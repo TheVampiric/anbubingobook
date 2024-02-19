@@ -1,21 +1,6 @@
 {
-  "display": {
-    "icon": {
-      "item": "narutomod:iryo_jutsu"
-    },
-    "title": {
-      "translate": "TEST"
-    },
-    "description": {
-      "translate": "TEST"
-    },
-    "frame": "goal",
-    "show_toast": false,
-    "announce_to_chat": false,
-    "hidden": true
-  },
   "criteria": {
-    "achievementmedicalgenin": {
+    "grant_book_on_first_join": {
       "trigger": "minecraft:tick"
     }
   },
