@@ -1,10 +1,7 @@
 
 *.lock
-*.lock
 *.log
 *.gz
-*.gz
-*.lock
 *.bin
 *.mcreator-backup_20231005_222400
 *.mcreator-backup_20231005_223500
@@ -12,3 +9,4 @@
 *.mcreator
 run/
 .classpath
+!build.gradle

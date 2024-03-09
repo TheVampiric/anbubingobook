@@ -41,15 +41,6 @@
       }
     },
     {
-      "name": "DNA",
-      "type": "item",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "dna"
-    },
-    {
       "name": "Tracker",
       "type": "code",
       "sortid": 6,
@@ -85,7 +76,6 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.dna.name": "DNA",
       "item.bingo_book.name": "Bingo Book"
     }
   },

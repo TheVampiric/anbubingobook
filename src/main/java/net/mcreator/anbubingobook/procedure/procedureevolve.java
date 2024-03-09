@@ -71,8 +71,9 @@ public class procedureevolve extends ElementsAnbubingobookMod.ModElement {
         _setstack.setTagInfo("player_idLeast", new NBTTagLong(UUIDLeast));
         _setstack.setTagInfo("color", new NBTTagLong(color));
         _setstack.setTagInfo("display", new NBTTagString(name));
-        ItemHandlerHelper.giveItemToPlayer((EntityPlayer) entity, _setstack);
+        ItemHandlerHelper.giveItemToPlayer( entity, _setstack);
         net.narutomod.procedure.ProcedureUtils.grantAdvancement(entity, "narutomod:mangekyosharinganopened", false);
+
 
 
     }

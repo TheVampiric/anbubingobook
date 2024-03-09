@@ -19,17 +19,8 @@ package net.mcreator.anbubingobook;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.client.event.ModelRegistryEvent;
 
-import net.minecraft.world.gen.IChunkGenerator;
-import net.minecraft.world.chunk.IChunkProvider;
-import net.minecraft.world.World;
 import net.narutomod.item.ItemJutsu;
-
-import java.util.Random;
 
 @ElementsAnbubingobookMod.ModElement.Tag
 public class JXP extends ElementsAnbubingobookMod.ModElement {
@@ -46,10 +37,14 @@ public class JXP extends ElementsAnbubingobookMod.ModElement {
 			stack = player.getHeldItemOffhand();
 		}
 		if (stack.getItem() instanceof ItemJutsu.Base) {
-			ItemJutsu.Base baseitem = (ItemJutsu.Base)stack.getItem();
+			ItemJutsu.Base baseitem = (ItemJutsu.Base) stack.getItem();
 			if (baseitem.getCurrentJutsuXp(stack) < baseitem.getCurrentJutsuRequiredXp(stack)) {
 				baseitem.addCurrentJutsuXp(stack, ModConfig.Jutsu_XP_MULTI);
+
+
 			}
 		}
 	}
 }
+
+
