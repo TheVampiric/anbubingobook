@@ -18,9 +18,9 @@
 package net.mcreator.anbubingobook;
 
 import com.google.common.collect.Maps;
-import com.mojang.util.UUIDTypeAdapter;
 import net.mcreator.anbubingobook.procedure.procedureevolve;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
@@ -31,14 +31,10 @@ import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.MobEffects;
-import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.item.Item;
-import net.minecraft.nbt.*;
-import net.minecraft.util.DamageSource;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
-import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
@@ -51,12 +47,11 @@ import net.narutomod.item.ItemEightGates;
 import net.narutomod.item.ItemSharingan;
 import net.narutomod.procedure.ProcedureSync;
 import net.narutomod.procedure.ProcedureUtils;
-import org.apache.logging.log4j.core.config.plugins.convert.TypeConverters;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
-import net.minecraft.item.ItemStack;
+import net.minecraft.entity.Entity;
 
 
 @ElementsAnbubingobookMod.ModElement.Tag
@@ -195,35 +190,39 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
         @SubscribeEvent(priority = EventPriority.LOW)
         public void LivingDeathEvent(LivingDeathEvent event) {
 
-            if (ModConfig.solo_MS) {
-                Entity pet = event.getEntityLiving();
-                Entity player = event.getSource().getTrueSource();
+                if (ModConfig.solo_MS) {
+
+                    if (event.getSource().getTrueSource() instanceof EntityPlayer) {
 
 
-                EntityPlayer player1 = (EntityPlayer) player;
+                        if (event.getEntity() instanceof EntityWolf) {
 
-                ItemStack helmet = player1.inventory.armorInventory.get(3);
+                            EntityWolf wolf = (EntityWolf) event.getEntity();
+                            EntityPlayer player = (EntityPlayer) event.getSource().getTrueSource();
 
-                UUID PUUID = player1.getUniqueID();
-                EntityWolf wolf = (EntityWolf) pet;
-                UUID WUUID = wolf.getOwnerId();
+                            UUID WOLFUU = wolf.getOwnerId();
+                            UUID PUUID = player.getUniqueID();
 
 
-                if (ModConfig.Wolf_XP <= player.getEntityData().getDouble(BATTLEXP)) {
-                    if (helmet.getItem() == ItemSharingan.helmet) {
-                        if (pet.getName().equals("Wolf")) {
-                            if (WUUID == PUUID) {
-                                helmet.shrink(1);
-                                Map<String, Object> dependencies = new HashMap<>();
-                                dependencies.put("entity", player);
-                                procedureevolve.executeProcedure(dependencies);
+                            ItemStack helmet = player.inventory.armorInventory.get(3);
+
+                            if (WOLFUU == PUUID) {
+                                if (helmet.getItem() == ItemSharingan.helmet) {
+                                    if (ModConfig.Wolf_XP <= player.getEntityData().getDouble(BATTLEXP)) {
+                                        helmet.shrink(1);
+                                        Map<String, Object> dependencies = new HashMap<>();
+                                        dependencies.put("entity", player);
+                                        procedureevolve.executeProcedure(dependencies);
+                                    }
+                                }
+
                             }
                         }
                     }
                 }
             }
         }
-    }
+
 
     @Override
     public void init(FMLInitializationEvent event) {
