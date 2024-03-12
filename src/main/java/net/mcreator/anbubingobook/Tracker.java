@@ -18,9 +18,8 @@
 package net.mcreator.anbubingobook;
 
 import com.google.common.collect.Maps;
+import com.ibm.icu.util.TimeUnit;
 import net.mcreator.anbubingobook.procedure.procedureevolve;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
@@ -33,25 +32,29 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
+import net.narutomod.Chakra;
 import net.narutomod.NarutomodModVariables;
 import net.narutomod.item.ItemEightGates;
 import net.narutomod.item.ItemSharingan;
 import net.narutomod.procedure.ProcedureSync;
 import net.narutomod.procedure.ProcedureUtils;
 
+import java.sql.Time;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
-import net.minecraft.entity.Entity;
+
+import net.narutomod.Chakra.Pathway;
+import net.narutomod.Chakra.Pathway.*;
 
 
 @ElementsAnbubingobookMod.ModElement.Tag
@@ -192,6 +195,17 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
         @SubscribeEvent(priority = EventPriority.LOW)
         public void LivingDeathEvent(LivingDeathEvent event) {
 
+            if (event.getEntity() instanceof EntityPlayerMP){
+
+                    EntityPlayer Player = (EntityPlayer) event.getEntity();
+                    EntityPlayerMP PlayerMP = (EntityPlayerMP) event.getEntity();
+
+
+                    Chakra.pathway(PlayerMP).consume(-(ModConfig.Respawn_Chakra_amount));
+            }
+
+
+
             if (ModConfig.solo_MS) {
 
                 if (event.getSource().getTrueSource() instanceof EntityPlayer) {
@@ -223,7 +237,15 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
                 }
             }
         }
-    }
+
+        @SubscribeEvent(priority = EventPriority.LOW)
+        public void respawn(LivingDeathEvent player) {
+
+
+
+
+            }
+        }
 
 
     @Override

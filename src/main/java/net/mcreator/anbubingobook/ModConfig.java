@@ -56,6 +56,7 @@ public class ModConfig extends ElementsAnbubingobookMod.ModElement	 {
 	public static int Jutsu_XP_MULTI = 1;
 
 
-
+	@Config.Comment("percent amount of chakra to respawn with (0.5 = 50%)")
+	public static float Respawn_Chakra_amount = 0.8f;
 
 }
