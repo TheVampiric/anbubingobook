@@ -1,0 +1,38 @@
+{
+  "minecraft:recipes/misc/bone_meal_from_bone": {
+    "criteria": {
+      "has_bone": "2024-03-10 05:29:37 +0000"
+    },
+    "done": true
+  },
+  "narutomod:ninjaachievement": {
+    "criteria": {
+      "ninjaachievement": "2024-03-10 05:29:42 +0000"
+    },
+    "done": true
+  },
+  "anbubingobook:grant_book_on_first_join": {
+    "criteria": {
+      "grant_book_on_first_join": "2024-03-10 05:29:10 +0000"
+    },
+    "done": true
+  },
+  "narutomod:bakuton_acquired": {
+    "criteria": {
+      "bakuton_acquired": "2024-03-10 05:30:04 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "birch_forest": "2024-03-10 05:29:09 +0000"
+    },
+    "done": false
+  },
+  "minecraft:husbandry/tame_an_animal": {
+    "criteria": {
+      "tamed_animal": "2024-03-10 05:29:58 +0000"
+    },
+    "done": true
+  }
+}

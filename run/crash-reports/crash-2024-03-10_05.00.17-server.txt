@@ -1,0 +1,137 @@
+---- Minecraft Crash Report ----
+// Daisy, daisy...
+
+Time: 3/10/24 5:00 AM
+Description: Ticking entity
+
+java.lang.NullPointerException: Ticking entity
+	at net.mcreator.anbubingobook.Tracker$PlayerHook.LivingDeathEvent(Tracker.java:209)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_56_PlayerHook_LivingDeathEvent_LivingDeathEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.common.ForgeHooks.onLivingDeath(ForgeHooks.java:615)
+	at net.minecraft.entity.EntityLivingBase.onDeath(EntityLivingBase.java:1168)
+	at net.minecraft.entity.passive.EntityPig.onDeath(EntityPig.java:191)
+	at net.minecraft.entity.EntityLivingBase.attackEntityFrom(EntityLivingBase.java:1023)
+	at net.minecraft.entity.passive.EntityAnimal.attackEntityFrom(EntityAnimal.java:75)
+	at net.minecraft.entity.EntityLivingBase.fall(EntityLivingBase.java:1325)
+	at net.minecraft.block.Block.onFallenUpon(Block.java:821)
+	at net.minecraft.entity.Entity.updateFallState(Entity.java:1132)
+	at net.minecraft.entity.EntityLivingBase.updateFallState(EntityLivingBase.java:215)
+	at net.minecraft.entity.Entity.move(Entity.java:896)
+	at net.minecraft.entity.EntityLivingBase.travel(EntityLivingBase.java:1958)
+	at net.minecraft.entity.passive.EntityPig.travel(EntityPig.java:301)
+	at net.minecraft.entity.EntityLivingBase.onLivingUpdate(EntityLivingBase.java:2393)
+	at net.minecraft.entity.EntityLiving.onLivingUpdate(EntityLiving.java:577)
+	at net.minecraft.entity.EntityAgeable.onLivingUpdate(EntityAgeable.java:178)
+	at net.minecraft.entity.passive.EntityAnimal.onLivingUpdate(EntityAnimal.java:45)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2179)
+	at net.minecraft.entity.EntityLiving.onUpdate(EntityLiving.java:295)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1996)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:832)
+	at net.minecraft.world.World.updateEntity(World.java:1958)
+	at net.minecraft.world.World.updateEntities(World.java:1762)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:613)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:767)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:668)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:185)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.mcreator.anbubingobook.Tracker$PlayerHook.LivingDeathEvent(Tracker.java:209)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_56_PlayerHook_LivingDeathEvent_LivingDeathEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.common.ForgeHooks.onLivingDeath(ForgeHooks.java:615)
+	at net.minecraft.entity.EntityLivingBase.onDeath(EntityLivingBase.java:1168)
+	at net.minecraft.entity.passive.EntityPig.onDeath(EntityPig.java:191)
+	at net.minecraft.entity.EntityLivingBase.attackEntityFrom(EntityLivingBase.java:1023)
+	at net.minecraft.entity.passive.EntityAnimal.attackEntityFrom(EntityAnimal.java:75)
+	at net.minecraft.entity.EntityLivingBase.fall(EntityLivingBase.java:1325)
+	at net.minecraft.block.Block.onFallenUpon(Block.java:821)
+	at net.minecraft.entity.Entity.updateFallState(Entity.java:1132)
+	at net.minecraft.entity.EntityLivingBase.updateFallState(EntityLivingBase.java:215)
+	at net.minecraft.entity.Entity.move(Entity.java:896)
+	at net.minecraft.entity.EntityLivingBase.travel(EntityLivingBase.java:1958)
+	at net.minecraft.entity.passive.EntityPig.travel(EntityPig.java:301)
+	at net.minecraft.entity.EntityLivingBase.onLivingUpdate(EntityLivingBase.java:2393)
+	at net.minecraft.entity.EntityLiving.onLivingUpdate(EntityLiving.java:577)
+	at net.minecraft.entity.EntityAgeable.onLivingUpdate(EntityAgeable.java:178)
+	at net.minecraft.entity.passive.EntityAnimal.onLivingUpdate(EntityAnimal.java:45)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2179)
+	at net.minecraft.entity.EntityLiving.onUpdate(EntityLiving.java:295)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1996)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:832)
+	at net.minecraft.world.World.updateEntity(World.java:1958)
+
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:pig (net.minecraft.entity.passive.EntityPig)
+	Entity ID: 1641
+	Entity Name: Pig
+	Entity's Exact location: -107.77, 70.00, 239.84
+	Entity's Block location: World: (-108,70,239), Chunk: (at 4,4,15 in -7,14; contains blocks -112,0,224 to -97,255,239), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Entity's Momentum: -0.02, -1.25, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1762)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:613)
+
+-- Affected level --
+Details:
+	Level name: New World
+	All players: 1 total; [EntityPlayerMP['Player546'/381, l='New World', x=-106.15, y=82.62, z=239.84]]
+	Chunk stats: ServerChunkCache: 292 Drop: 0
+	Level seed: 7095077319027978345
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (-112,64,248), Chunk: (at 0,4,8 in -7,15; contains blocks -112,0,240 to -97,255,255), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 3801 game time, 3801 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 95677 (now: false), thunder time: 124284 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:767)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:668)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:185)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_275, BellSoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), BellSoft
+	Memory: 764056928 bytes (728 MB) / 1270349824 bytes (1211 MB) up to 3337093120 bytes (3182 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2855 7 mods loaded, 7 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID            | Version      | Source                                                             | Signature |
+	|:------ |:------------- |:------------ |:------------------------------------------------------------------ |:--------- |
+	| LCHIJA | minecraft     | 1.12.2       | minecraft.jar                                                      | None      |
+	| LCHIJA | mcp           | 9.42         | minecraft.jar                                                      | None      |
+	| LCHIJA | FML           | 8.0.99.99    | forge-1.12.2-14.23.5.2855_mapped_snapshot_20171003-1.12-recomp.jar | None      |
+	| LCHIJA | forge         | 14.23.5.2855 | forge-1.12.2-14.23.5.2855_mapped_snapshot_20171003-1.12-recomp.jar | None      |
+	| LCHIJA | anbubingobook | 0.0.9        | main                                                               | None      |
+	| LCHIJA | narutomod     | 0.3.0-beta   | narutomod_deobfu.jar                                               | None      |
+	| LCHIJA | patchouli     | 1.0-23.6     | Patchouli-306770-3162874_mapped_snapshot_20171003-1.12.jar         | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Patchouli open book context: n/a
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player546'/381, l='New World', x=-106.15, y=82.62, z=239.84]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

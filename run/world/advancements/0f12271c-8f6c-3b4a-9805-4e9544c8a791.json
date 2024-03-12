@@ -1,0 +1,14 @@
+{
+  "anbubingobook:grant_book_on_first_join": {
+    "criteria": {
+      "grant_book_on_first_join": "2024-03-10 05:49:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "birch_forest": "2024-03-10 05:49:06 +0000"
+    },
+    "done": false
+  }
+}

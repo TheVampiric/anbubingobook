@@ -6,7 +6,7 @@
       "type": "item",
       "sortid": 2,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "bingo_book"
     },
@@ -18,8 +18,6 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "mod_config"
-<<<<<<< Updated upstream
-=======
     },
     {
       "name": "Evolve",
@@ -59,27 +57,6 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "jxp"
-    },
-    {
-      "name": "Bounty",
-      "type": "command",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bounty"
-    },
-    {
-      "name": "BountyCommandExecuted",
-      "type": "procedure",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "bounty_command_executed",
-      "metadata": {
-        "dependencies": []
-      }
     }
   ],
   "variable_elements": [
@@ -94,10 +71,8 @@
       "type": "number",
       "scope": "global",
       "value": "4.0"
->>>>>>> Stashed changes
     }
   ],
-  "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
@@ -120,8 +95,8 @@
     "serverSideOnly": false,
     "updateURL": "https://github.com/TheVampiric/anbubingobook",
     "requiredMods": [
-      " patchouli",
-      "narutomod"
+      "patchouli",
+      " narutomod"
     ],
     "dependencies": [],
     "dependants": [],

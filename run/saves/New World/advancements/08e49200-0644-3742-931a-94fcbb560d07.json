@@ -1,0 +1,38 @@
+{
+  "minecraft:recipes/misc/bone_meal_from_bone": {
+    "criteria": {
+      "has_bone": "2024-03-10 05:19:58 +0000"
+    },
+    "done": true
+  },
+  "narutomod:mangekyosharinganopened": {
+    "criteria": {
+      "mangekyosharinganopened": "2024-03-10 05:20:32 +0000"
+    },
+    "done": true
+  },
+  "anbubingobook:grant_book_on_first_join": {
+    "criteria": {
+      "grant_book_on_first_join": "2024-03-10 05:19:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2024-03-10 05:20:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "forest": "2024-03-10 05:19:59 +0000"
+    },
+    "done": false
+  },
+  "minecraft:husbandry/tame_an_animal": {
+    "criteria": {
+      "tamed_animal": "2024-03-10 05:20:31 +0000"
+    },
+    "done": true
+  }
+}
