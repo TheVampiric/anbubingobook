@@ -71,6 +71,8 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
     }
 
 
+
+
     public static double getBattleXp(EntityPlayer player) {
         return player.getEntityData().getDouble(BATTLEXP);
     }
@@ -190,38 +192,38 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
         @SubscribeEvent(priority = EventPriority.LOW)
         public void LivingDeathEvent(LivingDeathEvent event) {
 
-                if (ModConfig.solo_MS) {
+            if (ModConfig.solo_MS) {
 
-                    if (event.getSource().getTrueSource() instanceof EntityPlayer) {
-
-
-                        if (event.getEntity() instanceof EntityWolf) {
-
-                            EntityWolf wolf = (EntityWolf) event.getEntity();
-                            EntityPlayer player = (EntityPlayer) event.getSource().getTrueSource();
-
-                            UUID WOLFUU = wolf.getOwnerId();
-                            UUID PUUID = player.getUniqueID();
+                if (event.getSource().getTrueSource() instanceof EntityPlayer) {
 
 
-                            ItemStack helmet = player.inventory.armorInventory.get(3);
+                    if (event.getEntity() instanceof EntityWolf) {
 
-                            if (WOLFUU == PUUID) {
-                                if (helmet.getItem() == ItemSharingan.helmet) {
-                                    if (ModConfig.Wolf_XP <= player.getEntityData().getDouble(BATTLEXP)) {
-                                        helmet.shrink(1);
-                                        Map<String, Object> dependencies = new HashMap<>();
-                                        dependencies.put("entity", player);
-                                        procedureevolve.executeProcedure(dependencies);
-                                    }
+                        EntityWolf wolf = (EntityWolf) event.getEntity();
+                        EntityPlayer player = (EntityPlayer) event.getSource().getTrueSource();
+
+                        UUID WOLFUU = wolf.getOwnerId();
+                        UUID PUUID = player.getUniqueID();
+
+
+                        ItemStack helmet = player.inventory.armorInventory.get(3);
+
+                        if (WOLFUU == PUUID) {
+                            if (helmet.getItem() == ItemSharingan.helmet) {
+                                if (ModConfig.Wolf_XP <= player.getEntityData().getDouble(BATTLEXP)) {
+                                    helmet.shrink(1);
+                                    Map<String, Object> dependencies = new HashMap<>();
+                                    dependencies.put("entity", player);
+                                    procedureevolve.executeProcedure(dependencies);
                                 }
-
                             }
+
                         }
                     }
                 }
             }
         }
+    }
 
 
     @Override

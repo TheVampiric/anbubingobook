@@ -1,0 +1,29 @@
+{
+  "_fv": 18,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "fcs",
+    "customModelName": "Normal",
+    "name": "Medical Textbook",
+    "rarity": "EPIC",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 1,
+    "nutritionalValue": 0,
+    "saturation": 0.0,
+    "eatingSpeed": 5,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "MedicalknowledgeFoodEaten"
+    }
+  }
+}

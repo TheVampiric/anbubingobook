@@ -6,18 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="5227eeac-cb90-40cf-881c-6441ab6ef7ef" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anbubingobook.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/anbubingobook.mcreator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/assets/anbubingobook/lang/en_us.lang" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/assets/anbubingobook/lang/en_us.lang" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mcmod.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/Tracker$Deaths.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/Tracker$PlayerHook.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/Tracker$PlayerHook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/Tracker.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/Tracker.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pack.mcmeta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" beforeDir="false" afterPath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/createSrgToMcp/output.srg" beforeDir="false" afterPath="$PROJECT_DIR$/build/createSrgToMcp/output.srg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/modid-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/modid-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reobfJar/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/reobfJar/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reobfJar/output.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/reobfJar/output.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/Tracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/Tracker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/anbubingobook/lang/en_us.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/anbubingobook/lang/en_us.lang" afterDir="false" />
@@ -92,10 +89,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;1.4.0&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/PABELL/Desktop/AHZ naruto/anbubingobook-main/libs/narutomod_deobfu.jar&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
