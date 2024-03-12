@@ -99,6 +99,15 @@
       "metadata": {
         "dependencies": []
       }
+    },
+    {
+      "name": "CurseMark",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "curse_mark"
     }
   ],
   "variable_elements": [
@@ -118,6 +127,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.curse_mark.name": "Curse Mark",
       "item.medicalknowledge.name": "Medical Textbook",
       "item.bingo_book.name": "Bingo Book"
     }

@@ -202,6 +202,7 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
 
 
                     Chakra.pathway(PlayerMP).consume(-(ModConfig.Respawn_Chakra_amount));
+                    Chakra.pathway(PlayerMP).consume(-10);
             }
 
 
