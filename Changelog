@@ -1,2 +1,5 @@
 -- Added MedicalKnowledge scroll that grants the player the Medical ninja advancement and the medical release
 -- Added config option to adjust % of chakra the player respawns with after dying
+-- MS obtained from the command and the wolf both now have the players name on them to prevent confusion
+-- Hopefully fixed rare cases of ninjaxp max being reset by raising priority of ours
+-- added keybind to toggle sharingan lockon

@@ -1,38 +1,15 @@
 package net.mcreator.anbubingobook.procedure;
 
 import net.mcreator.anbubingobook.ElementsAnbubingobookMod;
-import net.minecraft.advancements.AdvancementList;
-import net.minecraft.advancements.AdvancementManager;
-import net.minecraft.client.entity.EntityOtherPlayerMP;
-import net.minecraft.client.entity.EntityPlayerSP;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.*;
-import net.minecraft.world.WorldServer;
-import net.minecraftforge.event.entity.living.LivingDamageEvent;
-import net.minecraftforge.fml.common.eventhandler.EventPriority;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.items.ItemHandlerHelper;
-import net.narutomod.NarutomodMod;
-import net.narutomod.item.ItemEightGates;
-import net.narutomod.item.ItemJutsu;
 import net.narutomod.item.ItemMangekyoSharingan;
 import net.narutomod.item.ItemMangekyoSharinganObito;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.world.World;
-import net.minecraft.util.ResourceLocation;
-
 
 
 import java.util.Map;
-import java.util.UUID;
-import java.util.Random;
-
-import net.minecraft.advancements.AdvancementProgress;
-import net.minecraft.advancements.Advancement;
-import net.narutomod.procedure.ProcedureUtils;
 
 @ElementsAnbubingobookMod.ModElement.Tag
 public class procedureevolve extends ElementsAnbubingobookMod.ModElement {
@@ -53,7 +30,7 @@ public class procedureevolve extends ElementsAnbubingobookMod.ModElement {
         long UUIDMost = entity.getUniqueID().getMostSignificantBits();
         long UUIDLeast = entity.getUniqueID().getLeastSignificantBits();
         long color = (long) (Math.random() * 888888888 + 111111111);
-        String name = entity.getName();
+
 
 
         ItemStack mangekyo = ItemStack.EMPTY;
@@ -70,7 +47,7 @@ public class procedureevolve extends ElementsAnbubingobookMod.ModElement {
         _setstack.setTagInfo("player_idMost", new NBTTagLong(UUIDMost));
         _setstack.setTagInfo("player_idLeast", new NBTTagLong(UUIDLeast));
         _setstack.setTagInfo("color", new NBTTagLong(color));
-        _setstack.setTagInfo("display", new NBTTagString(name));
+        _setstack.setStackDisplayName(entity.getName() + "'s " + _setstack.getDisplayName());
         ItemHandlerHelper.giveItemToPlayer( entity, _setstack);
         net.narutomod.procedure.ProcedureUtils.grantAdvancement(entity, "narutomod:mangekyosharinganopened", false);
 

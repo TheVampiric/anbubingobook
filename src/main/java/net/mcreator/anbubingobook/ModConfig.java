@@ -57,6 +57,6 @@ public class ModConfig extends ElementsAnbubingobookMod.ModElement	 {
 
 
 	@Config.Comment("percent amount of chakra to respawn with (0.5 = 50%)")
-	public static float Respawn_Chakra_amount = 0.8f;
+	public static float Respawn_Chakra_amount = 0.0f;
 
 }

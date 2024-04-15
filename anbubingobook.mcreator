@@ -108,6 +108,24 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "curse_mark"
+    },
+    {
+      "name": "EyeTracking",
+      "type": "keybind",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "eye_tracking"
+    },
+    {
+      "name": "TrackingToggle",
+      "type": "code",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "tracking_toggle"
     }
   ],
   "variable_elements": [
@@ -129,7 +147,8 @@
     "en_us": {
       "item.curse_mark.name": "Curse Mark",
       "item.medicalknowledge.name": "Medical Textbook",
-      "item.bingo_book.name": "Bingo Book"
+      "item.bingo_book.name": "Bingo Book",
+      "key.mcreator.eye_tracking": "Sharingan Tracking Toggle"
     }
   },
   "foldersRoot": {

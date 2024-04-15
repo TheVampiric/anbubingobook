@@ -1,4 +1,4 @@
-
+!build.gradle
 *.lock
 *.log
 *.gz
@@ -9,4 +9,4 @@
 *.mcreator
 run/
 .classpath
-!build.gradle
+*.class

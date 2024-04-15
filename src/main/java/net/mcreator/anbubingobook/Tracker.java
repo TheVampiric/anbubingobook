@@ -18,7 +18,6 @@
 package net.mcreator.anbubingobook;
 
 import com.google.common.collect.Maps;
-import com.ibm.icu.util.TimeUnit;
 import net.mcreator.anbubingobook.procedure.procedureevolve;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
@@ -36,7 +35,6 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -48,18 +46,13 @@ import net.narutomod.item.ItemSharingan;
 import net.narutomod.procedure.ProcedureSync;
 import net.narutomod.procedure.ProcedureUtils;
 
-import java.sql.Time;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-import net.narutomod.Chakra.Pathway;
-import net.narutomod.Chakra.Pathway.*;
-
 
 @ElementsAnbubingobookMod.ModElement.Tag
 public class Tracker extends ElementsAnbubingobookMod.ModElement {
-
 
     private static final String BATTLEXP = NarutomodModVariables.BATTLEXP;
 
@@ -72,8 +65,6 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
     public Tracker(ElementsAnbubingobookMod instance) {
         super(instance, 3);
     }
-
-
 
 
     public static double getBattleXp(EntityPlayer player) {
@@ -130,9 +121,9 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
         private boolean isOffCooldown(Entity entity) {
             return true;
         }
+        public boolean tracking = true;
 
-
-        @SubscribeEvent(priority = EventPriority.HIGH)
+        @SubscribeEvent(priority = EventPriority.HIGHEST)
         public void onDamaged(LivingDamageEvent event) {
             Entity targetEntity = event.getEntity();
             Entity sourceEntity = event.getSource().getTrueSource();
@@ -195,63 +186,65 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
         @SubscribeEvent(priority = EventPriority.LOW)
         public void LivingDeathEvent(LivingDeathEvent event) {
 
-            if (event.getEntity() instanceof EntityPlayerMP){
+            if (event.getEntity() instanceof EntityPlayerMP) {
 
-                    EntityPlayer Player = (EntityPlayer) event.getEntity();
-                    EntityPlayerMP PlayerMP = (EntityPlayerMP) event.getEntity();
+                EntityPlayer Player = (EntityPlayer) event.getEntity();
+                EntityPlayerMP PlayerMP = (EntityPlayerMP) event.getEntity();
 
 
-                    Chakra.pathway(PlayerMP).consume(-(ModConfig.Respawn_Chakra_amount));
-                    Chakra.pathway(PlayerMP).consume(-10);
+                Chakra.pathway(PlayerMP).consume(-(ModConfig.Respawn_Chakra_amount));
+                Chakra.pathway(PlayerMP).consume(10);
             }
 
 
+            if (ModConfig.solo_MS && event.getSource().getTrueSource() instanceof EntityPlayer && event.getEntity() instanceof EntityWolf) {
 
-            if (ModConfig.solo_MS) {
+                EntityWolf wolf = (EntityWolf) event.getEntity();
+                EntityPlayer player = (EntityPlayer) event.getSource().getTrueSource();
 
-                if (event.getSource().getTrueSource() instanceof EntityPlayer) {
-
-
-                    if (event.getEntity() instanceof EntityWolf) {
-
-                        EntityWolf wolf = (EntityWolf) event.getEntity();
-                        EntityPlayer player = (EntityPlayer) event.getSource().getTrueSource();
-
-                        UUID WOLFUU = wolf.getOwnerId();
-                        UUID PUUID = player.getUniqueID();
+                UUID WOLFUU = wolf.getOwnerId();
+                UUID PUUID = player.getUniqueID();
 
 
-                        ItemStack helmet = player.inventory.armorInventory.get(3);
+                ItemStack helmet = player.inventory.armorInventory.get(3);
 
-                        if (WOLFUU == PUUID) {
-                            if (helmet.getItem() == ItemSharingan.helmet) {
-                                if (ModConfig.Wolf_XP <= player.getEntityData().getDouble(BATTLEXP)) {
-                                    helmet.shrink(1);
-                                    Map<String, Object> dependencies = new HashMap<>();
-                                    dependencies.put("entity", player);
-                                    procedureevolve.executeProcedure(dependencies);
-                                }
-                            }
-
+                if (WOLFUU == PUUID) {
+                    if (helmet.getItem() == ItemSharingan.helmet) {
+                        if (ModConfig.Wolf_XP <= player.getEntityData().getDouble(BATTLEXP)) {
+                            helmet.shrink(1);
+                            Map<String, Object> dependencies = new HashMap<>();
+                            dependencies.put("entity", player);
+                            procedureevolve.executeProcedure(dependencies);
                         }
                     }
+
                 }
             }
         }
-
         @SubscribeEvent(priority = EventPriority.LOW)
-        public void respawn(LivingDeathEvent player) {
+        public void untrack(TickEvent.PlayerTickEvent event){
+            if (!TrackingToggle.isTracking()){
+                EntityPlayer player = event.player;
 
+                player.sendMessage(new TextComponentString((String.valueOf(tracking)) ));
+                player.sendMessage(new TextComponentString("testing" ));
 
-
-
+                player.getEntityData().setInteger("targetLockOnEntityTicksRemaining", 0);
             }
         }
+
+    }
+
+
+    @SubscribeEvent(priority = EventPriority.LOW)
+    public void respawn(LivingDeathEvent player) {
+
+    }
 
 
     @Override
     public void init(FMLInitializationEvent event) {
-        MinecraftForge.EVENT_BUS.register(new PlayerHook());
+        MinecraftForge.EVENT_BUS.register(new Tracker.PlayerHook());
     }
 
 }
