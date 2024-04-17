@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "net.mcreator.anbubingobook.mixtest",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "modid.refmap.json",
+  "mixins": [
+
+    "mixint",
+    "Screen"
+
+  ],
+  "client": [
+  ],
+  "minVersion": "0.7.10"
+}
+
+

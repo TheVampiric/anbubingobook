@@ -1,15 +1,20 @@
 buildscript {
     repositories {
         maven { url = 'https://maven.minecraftforge.net' }
+        maven { url = 'https://repo.spongepowered.org/maven' }
         mavenCentral()
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:3.+'
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
     }
 }
 
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
+apply plugin: 'org.spongepowered.mixin'
+
+
 
 version = "1.0"
 group = "com.yourname.modid"
@@ -59,6 +64,8 @@ repositories {
         dirs 'libs'
     }
 
+    maven { url = "https://repo.spongepowered.org/maven" }
+
     maven {
         url "https://cursemaven.com"
     }
@@ -68,9 +75,31 @@ repositories {
 dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2855'
 
-    fg.deobf("curse.maven:narutomod-831157:4767054")
-    runtimeOnly fg.deobf("curse.maven:Patchouli-306770:3162874")
-    implementation name: 'narutomod_deobfu'
+    implementation fg.deobf("curse.maven:ahznbs-naruto-mod-831157:4767054")
+    implementation fg.deobf("curse.maven:Patchouli-306770:3162874")
+
+
+
+    annotationProcessor  ('org.spongepowered:mixin:0.7.11-SNAPSHOT')
+
+    implementation ('org.spongepowered:mixin:0.7.11-SNAPSHOT') {
+        exclude module: 'guava'
+        exclude module: 'commons-io'
+        exclude module: 'gson'
+
+    }
 }
+
+
+
+
+
+
+mixin {
+    add sourceSets.main, "modid.refmap.json"
+
+    config "modid.mixins.json"
+}
+
 
 apply from: 'mcreator.gradle'
