@@ -61,6 +61,9 @@ public class TrackingToggle extends ElementsAnbubingobookMod.ModElement {
 	public void registerModels(ModelRegistryEvent event) {
 	}
 
+
+	// just has tracking set to true, on keybind sets it to false (hence the inverse tracking thing)
+	// call isTracking to see if shar lock on should be tracking
     public static boolean tracking = true;
 
     public static boolean isTracking() {

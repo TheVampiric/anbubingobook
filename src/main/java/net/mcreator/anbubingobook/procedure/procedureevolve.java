@@ -43,6 +43,8 @@ public class procedureevolve extends ElementsAnbubingobookMod.ModElement {
         }
         ItemStack _setstack = (mangekyo);
 
+        // adds data to the sharingan, such as te most and least id as well as the random color and the plyers name
+        // also grants advancement
         _setstack.setCount(1);
         _setstack.setTagInfo("player_idMost", new NBTTagLong(UUIDMost));
         _setstack.setTagInfo("player_idLeast", new NBTTagLong(UUIDLeast));

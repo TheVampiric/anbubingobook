@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5227eeac-cb90-40cf-881c-6441ab6ef7ef" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anbubingobook.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/anbubingobook.mcreator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/assets/anbubingobook/lang/en_us.lang" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/assets/anbubingobook/lang/en_us.lang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/Tracker$PlayerHook.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/Tracker$PlayerHook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/modid-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/modid-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reobfJar/output.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/reobfJar/output.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/JXP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/JXP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/Tracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/Tracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/anbubingobook/lang/en_us.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/anbubingobook/lang/en_us.lang" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/TrackingToggle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/TrackingToggle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/item/ItemMedicalknowledge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/item/ItemMedicalknowledge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/procedure/ProcedureMedicalknowledgeFoodEaten.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/procedure/ProcedureMedicalknowledgeFoodEaten.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/procedure/procedureevolve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/procedure/procedureevolve.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +59,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2Z9sdw8ibS38HW2jOjFh1Ss8NGD" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -69,6 +72,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.anbubingobook [:createMcpToSrg :createMcpToSrg :createMcpToSrg].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",

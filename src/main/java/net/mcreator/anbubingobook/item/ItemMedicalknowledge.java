@@ -31,6 +31,16 @@ public class ItemMedicalknowledge extends ElementsAnbubingobookMod.ModElement {
 		super(instance, 9);
 	}
 
+	/*
+
+	DO NOT TOUCH
+	MCREATOR FUCKERY HAPPEND HERE
+	NEITHER DOOR NOR GOD HAD ANY HAND IN THE CREATION OF THIS
+
+
+	 */
+
+
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemFoodCustom());

@@ -31,6 +31,7 @@ public class JXP extends ElementsAnbubingobookMod.ModElement {
 		super(instance, 7);
 	}
 
+	// used for jutsuxp multipler (currently only affects the xp from punching) could also change this to use an event but it works for now
 	public static void logBattleXP(EntityPlayer player) {
 		ItemStack stack = player.getHeldItemMainhand();
 		if (!(stack.getItem() instanceof ItemJutsu.Base)) {

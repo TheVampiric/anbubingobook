@@ -123,6 +123,7 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
         }
         public boolean tracking = true;
 
+        // Stuff mostly from main mod, see comment for end
         @SubscribeEvent(priority = EventPriority.HIGHEST)
         public void onDamaged(LivingDamageEvent event) {
             Entity targetEntity = event.getEntity();
@@ -182,10 +183,12 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
             }
         }
 
+        //End of stuff from main mod
 
+
+        // make player respawn with chakra
         @SubscribeEvent(priority = EventPriority.LOW)
         public void LivingDeathEvent(LivingDeathEvent event) {
-
             if (event.getEntity() instanceof EntityPlayerMP) {
 
                 EntityPlayer Player = (EntityPlayer) event.getEntity();
@@ -193,7 +196,7 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
 
 
                 Chakra.pathway(PlayerMP).consume(-(ModConfig.Respawn_Chakra_amount));
-                Chakra.pathway(PlayerMP).consume(10);
+                Chakra.pathway(PlayerMP).consume(10d);
             }
 
 
@@ -208,23 +211,26 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
 
                 ItemStack helmet = player.inventory.armorInventory.get(3);
 
-                if (WOLFUU == PUUID) {
-                    if (helmet.getItem() == ItemSharingan.helmet) {
-                        if (ModConfig.Wolf_XP <= player.getEntityData().getDouble(BATTLEXP)) {
-                            helmet.shrink(1);
-                            Map<String, Object> dependencies = new HashMap<>();
-                            dependencies.put("entity", player);
-                            procedureevolve.executeProcedure(dependencies);
-                        }
-                    }
+                if (WOLFUU == PUUID && helmet.getItem() == ItemSharingan.helmet && ModConfig.Wolf_XP <= player.getEntityData().getDouble(BATTLEXP)) {
+                    helmet.shrink(1);
+                    Map<String, Object> dependencies = new HashMap<>();
+                    dependencies.put("entity", player);
+                    procedureevolve.executeProcedure(dependencies);
+
 
                 }
             }
         }
+
+
+        //Set tracking to 0 per tick, rn still locks on for a second or so, need hooks / mixins to make this work well
+        //Need to edit or remove the testing thing so that player does not get spammed, will make an intentional error so no one forgets
+
         @SubscribeEvent(priority = EventPriority.LOW)
         public void untrack(TickEvent.PlayerTickEvent event){
             if (!TrackingToggle.isTracking()){
                 EntityPlayer player = event.player;
+                INTENTIONAL_ERROR_READ_COMMENT
 
                 player.sendMessage(new TextComponentString((String.valueOf(tracking)) ));
                 player.sendMessage(new TextComponentString("testing" ));
@@ -235,11 +241,6 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
 
     }
 
-
-    @SubscribeEvent(priority = EventPriority.LOW)
-    public void respawn(LivingDeathEvent player) {
-
-    }
 
 
     @Override

@@ -32,16 +32,21 @@ public class ProcedureMedicalknowledgeFoodEaten extends ElementsAnbubingobookMod
 			EntityPlayerMP player = (EntityPlayerMP) dependencies.get("player");
 
 			if (player instanceof EntityPlayerMP) {
+				// tells it what advancement we looking at / for
 				Advancement _adv = ( (player).mcServer).getAdvancementManager()
 						.getAdvancement(new ResourceLocation("narutomod:achievementmedicalgenin"));
+
+				//gets current advancement progress
 				AdvancementProgress _ap = ( player).getAdvancements().getProgress(_adv);
 				if (!_ap.isDone()) {
+
+					// if not done, go thru all requirements, adds them and then gives the item at the end
 					Iterator _iterator = _ap.getRemaningCriteria().iterator();
 					while (_iterator.hasNext()) {
 						String _criterion = (String) _iterator.next();
 						( player).getAdvancements().grantCriterion(_adv, _criterion);
 
-
+						//gives item here
 						ItemStack release = new ItemStack(ItemIryoJutsu.block, (1));
 						release.setCount(1);
 						release.setTagInfo("player_idMost", new NBTTagLong(player.getUniqueID().getMostSignificantBits()));

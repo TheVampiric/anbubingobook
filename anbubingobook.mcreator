@@ -57,75 +57,6 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "jxp"
-    },
-    {
-      "name": "Bounty",
-      "type": "command",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bounty"
-    },
-    {
-      "name": "BountyCommandExecuted",
-      "type": "procedure",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "bounty_command_executed",
-      "metadata": {
-        "dependencies": []
-      }
-    },
-    {
-      "name": "Medicalknowledge",
-      "type": "food",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "medicalknowledge"
-    },
-    {
-      "name": "MedicalknowledgeFoodEaten",
-      "type": "procedure",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "medicalknowledge_food_eaten",
-      "metadata": {
-        "dependencies": []
-      }
-    },
-    {
-      "name": "CurseMark",
-      "type": "item",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "curse_mark"
-    },
-    {
-      "name": "EyeTracking",
-      "type": "keybind",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "eye_tracking"
-    },
-    {
-      "name": "TrackingToggle",
-      "type": "code",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "tracking_toggle"
     }
   ],
   "variable_elements": [
@@ -145,10 +76,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.curse_mark.name": "Curse Mark",
-      "item.medicalknowledge.name": "Medical Textbook",
-      "item.bingo_book.name": "Bingo Book",
-      "key.mcreator.eye_tracking": "Sharingan Tracking Toggle"
+      "item.bingo_book.name": "Bingo Book"
     }
   },
   "foldersRoot": {
