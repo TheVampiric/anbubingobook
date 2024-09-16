@@ -1,6 +1,7 @@
 package net.mcreator.anbubingobook.procedure;
 
 import net.mcreator.anbubingobook.ElementsAnbubingobookMod;
+import net.mcreator.anbubingobook.ModConfig;
 import net.minecraft.advancements.AdvancementList;
 import net.minecraft.advancements.AdvancementManager;
 import net.minecraft.client.entity.EntityOtherPlayerMP;
@@ -53,7 +54,6 @@ public class procedureevolve extends ElementsAnbubingobookMod.ModElement {
         long UUIDMost = entity.getUniqueID().getMostSignificantBits();
         long UUIDLeast = entity.getUniqueID().getLeastSignificantBits();
         long color = (long) (Math.random() * 888888888 + 111111111);
-        String name = entity.getName();
 
 
         ItemStack mangekyo = ItemStack.EMPTY;
@@ -70,10 +70,12 @@ public class procedureevolve extends ElementsAnbubingobookMod.ModElement {
         _setstack.setTagInfo("player_idMost", new NBTTagLong(UUIDMost));
         _setstack.setTagInfo("player_idLeast", new NBTTagLong(UUIDLeast));
         _setstack.setTagInfo("color", new NBTTagLong(color));
-        _setstack.setTagInfo("display", new NBTTagString(name));
+        _setstack.setStackDisplayName(entity.getName() + "'s " + _setstack.getDisplayName());
         ItemHandlerHelper.giveItemToPlayer( entity, _setstack);
-        net.narutomod.procedure.ProcedureUtils.grantAdvancement(entity, "narutomod:mangekyosharinganopened", false);
-
+        net.narutomod.procedure.ProcedureUtils.grantAdvancement(entity, "narutomod:mangekyosharinganopened", true);
+        if (!ProcedureUtils.advancementAchieved(entity, "narutomod:sharinganopened") && ModConfig.BASE_SHARINGAN_ADVANCEMENT) {
+            net.narutomod.procedure.ProcedureUtils.grantAdvancement(entity, "narutomod:sharinganopened", true);
+        }
 
 
     }

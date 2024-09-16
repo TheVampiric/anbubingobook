@@ -55,7 +55,13 @@ public class ModConfig extends ElementsAnbubingobookMod.ModElement	 {
 	@Config.Comment("Jutsu xp amount changer, setting it to 2 = 2 jutsu xp per hit")
 	public static int Jutsu_XP_MULTI = 1;
 
+	@Config.Comment("Should Player spawn with the ninja advancement?")
+	public static boolean NINJA_START = false;
 
+	@Config.Comment("Should Evolving a sharingan into MS give the player the base sharingan advancement as well as the Mangekyo advancement (also effects /evolve)")
+	public static boolean BASE_SHARINGAN_ADVANCEMENT = false;
 
+	@Config.Comment("what % of chakra a player should regen every 4 seconds (even while moving) 0.1 = 10%")
+	public static float PASSIVE_REGEN_AMOUNT = 0.00f;
 
 }

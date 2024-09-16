@@ -57,6 +57,27 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "jxp"
+    },
+    {
+      "name": "RerollCommandExecuted",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "reroll_command_executed",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Reroll",
+      "type": "command",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reroll"
     }
   ],
   "variable_elements": [

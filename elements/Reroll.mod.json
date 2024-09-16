@@ -1,0 +1,11 @@
+{
+  "_fv": 18,
+  "_type": "command",
+  "definition": {
+    "commandName": "reroll",
+    "permissionLevel": "2",
+    "onCommandExecuted": {
+      "name": "RerollCommandExecuted"
+    }
+  }
+}

@@ -42,7 +42,9 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
+import net.narutomod.Chakra;
 import net.narutomod.NarutomodModVariables;
+import net.narutomod.PlayerTracker;
 import net.narutomod.item.ItemEightGates;
 import net.narutomod.item.ItemSharingan;
 import net.narutomod.procedure.ProcedureSync;
@@ -52,6 +54,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 import net.minecraft.entity.Entity;
+import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent;
 
 
 @ElementsAnbubingobookMod.ModElement.Tag
@@ -127,7 +131,7 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
         }
 
 
-        @SubscribeEvent(priority = EventPriority.HIGH)
+        @SubscribeEvent(priority = EventPriority.HIGHEST)
         public void onDamaged(LivingDamageEvent event) {
             Entity targetEntity = event.getEntity();
             Entity sourceEntity = event.getSource().getTrueSource();
@@ -190,38 +194,60 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
         @SubscribeEvent(priority = EventPriority.LOW)
         public void LivingDeathEvent(LivingDeathEvent event) {
 
-                if (ModConfig.solo_MS) {
+            if (ModConfig.solo_MS) {
 
-                    if (event.getSource().getTrueSource() instanceof EntityPlayer) {
-
-
-                        if (event.getEntity() instanceof EntityWolf) {
-
-                            EntityWolf wolf = (EntityWolf) event.getEntity();
-                            EntityPlayer player = (EntityPlayer) event.getSource().getTrueSource();
-
-                            UUID WOLFUU = wolf.getOwnerId();
-                            UUID PUUID = player.getUniqueID();
+                if (event.getSource().getTrueSource() instanceof EntityPlayer) {
 
 
-                            ItemStack helmet = player.inventory.armorInventory.get(3);
+                    if (event.getEntity() instanceof EntityWolf) {
 
-                            if (WOLFUU == PUUID) {
-                                if (helmet.getItem() == ItemSharingan.helmet) {
-                                    if (ModConfig.Wolf_XP <= player.getEntityData().getDouble(BATTLEXP)) {
-                                        helmet.shrink(1);
-                                        Map<String, Object> dependencies = new HashMap<>();
-                                        dependencies.put("entity", player);
-                                        procedureevolve.executeProcedure(dependencies);
-                                    }
+                        EntityWolf wolf = (EntityWolf) event.getEntity();
+                        EntityPlayer player = (EntityPlayer) event.getSource().getTrueSource();
+
+                        UUID WOLFUU = wolf.getOwnerId();
+                        UUID PUUID = player.getUniqueID();
+
+
+                        ItemStack helmet = player.inventory.armorInventory.get(3);
+
+                        if (WOLFUU == PUUID) {
+                            if (helmet.getItem() == ItemSharingan.helmet) {
+                                if (ModConfig.Wolf_XP <= player.getEntityData().getDouble(BATTLEXP)) {
+                                    helmet.shrink(1);
+                                    Map<String, Object> dependencies = new HashMap<>();
+                                    dependencies.put("entity", player);
+                                    procedureevolve.executeProcedure(dependencies);
                                 }
-
                             }
+
                         }
                     }
                 }
             }
         }
+
+		@SubscribeEvent
+		public void onJoin(PlayerLoggedInEvent event){
+            EntityPlayerMP player = (EntityPlayerMP) event.player;
+            if (!ProcedureUtils.advancementAchieved(player, "narutomod:ninjaachievement") && ModConfig.NINJA_START) {
+                ProcedureUtils.grantAdvancement(player, "narutomod:ninjaachievement", true);
+            }
+		}
+
+
+        @SubscribeEvent
+        public void regen(TickEvent.PlayerTickEvent event){
+            EntityPlayer player = event.player;
+            if (PlayerTracker.isNinja(player) && player.ticksExisted % 80 == 0 && !player.world.isRemote && event.phase == TickEvent.Phase.END){
+                Chakra.pathway(player).consume(-ModConfig.PASSIVE_REGEN_AMOUNT);
+
+            }
+        }
+
+            
+    }
+
+
 
 
     @Override
