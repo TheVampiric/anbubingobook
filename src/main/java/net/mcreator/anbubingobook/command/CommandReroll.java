@@ -32,15 +32,15 @@ public class CommandReroll extends ElementsAnbubingobookMod.ModElement {
 	public void serverLoad(FMLServerStartingEvent event) {
 		event.registerServerCommand(new CommandHandler());
 	}
-	public static class CommandHandler implements ICommand {
+	public static class CommandHandler extends CommandBase {
 		@Override
 		public int compareTo(ICommand c) {
 			return getName().compareTo(c.getName());
 		}
 
 		@Override
-		public boolean checkPermission(MinecraftServer server, ICommandSender var1) {
-			return true;
+		public int getRequiredPermissionLevel() {
+			return 2;
 		}
 
 		@Override
