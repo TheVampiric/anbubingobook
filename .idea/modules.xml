@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/anbubingobook-1.3.0.main.iml" filepath="$PROJECT_DIR$/.idea/modules/anbubingobook-1.3.0.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/anbubingobook-1.3.0.test.iml" filepath="$PROJECT_DIR$/.idea/modules/anbubingobook-1.3.0.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/anbubingobook.main.iml" filepath="$PROJECT_DIR$/.idea/modules/anbubingobook.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/anbubingobook.test.iml" filepath="$PROJECT_DIR$/.idea/modules/anbubingobook.test.iml" />
     </modules>
   </component>
 </project>

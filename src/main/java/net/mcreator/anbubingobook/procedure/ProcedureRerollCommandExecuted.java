@@ -23,15 +23,17 @@ public class ProcedureRerollCommandExecuted extends ElementsAnbubingobookMod.Mod
 	public static void executeProcedure(Map<String, Object> dependencies) {
 
 		EntityPlayerMP player = (EntityPlayerMP) dependencies.get("player");
+		boolean remove = (boolean) dependencies.get("remove");
 
-		List<String> advancement = extras.CheckAdvancements(player);
-		if (advancement != null) {
-			extras.RemoveAdvancement(player, advancement.get(0));
-			player.sendMessage(new TextComponentString(advancement.get(0)));
-			advancement.remove(0);
-			if (!advancement.isEmpty()) {
-				executeProcedure(dependencies);
-
+		if (remove) {
+			player.sendMessage(new TextComponentString(String.valueOf(remove)));
+			List<String> advancement = extras.CheckAdvancements(player);
+			if (advancement != null) {
+				extras.RemoveAdvancement(player, advancement.get(0));
+				advancement.remove(0);
+				if (!advancement.isEmpty()) {
+					executeProcedure(dependencies);
+				}
 			}
 		}
 	}
