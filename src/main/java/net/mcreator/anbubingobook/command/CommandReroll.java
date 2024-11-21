@@ -123,9 +123,6 @@ public class CommandReroll extends ElementsAnbubingobookMod.ModElement {
 
 
 
-					player.sendMessage(new TextComponentString(String.valueOf(reroll)));
-
-
 					$_dependencies.put("player", player);
 
 					//remove advancements + items
