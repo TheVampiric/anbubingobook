@@ -64,4 +64,7 @@ public class ModConfig extends ElementsAnbubingobookMod.ModElement	 {
 	@Config.Comment("what % of chakra a player should regen every 4 seconds (even while moving) 0.1 = 10%")
 	public static float PASSIVE_REGEN_AMOUNT = 0.00f;
 
+	@Config.Comment("Set to true to allow /reroll to remove advancement + item for wood release")
+	public static boolean WOOD_REROLL = false;
+
 }

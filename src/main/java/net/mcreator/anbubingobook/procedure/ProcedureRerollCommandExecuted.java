@@ -5,8 +5,10 @@ import net.minecraft.advancements.AdvancementManager;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.item.Item;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.WorldServer;
+import net.narutomod.item.*;
 import net.narutomod.procedure.ProcedureKGDistribution;
 import net.narutomod.procedure.ProcedureUtils;
 
@@ -23,18 +25,26 @@ public class ProcedureRerollCommandExecuted extends ElementsAnbubingobookMod.Mod
 	public static void executeProcedure(Map<String, Object> dependencies) {
 
 		EntityPlayerMP player = (EntityPlayerMP) dependencies.get("player");
-		boolean remove = (boolean) dependencies.get("remove");
 
-		if (remove) {
-			player.sendMessage(new TextComponentString(String.valueOf(remove)));
-			List<String> advancement = extras.CheckAdvancements(player);
-			if (advancement != null) {
-				extras.RemoveAdvancement(player, advancement.get(0));
-				advancement.remove(0);
-				if (!advancement.isEmpty()) {
-					executeProcedure(dependencies);
-				}
+		List<String> advancement = extras.CheckAdvancements(player);
+		Item[] items = {ItemBakuton.block, ItemByakugan.helmet, ItemFutton.block, ItemHyoton.block, ItemJiton.block, ItemJinton.block, ItemRanton.block, ItemShakuton.block, ItemShikotsumyaku.block, ItemYooton.block, ItemMangekyoSharinganEternal.helmet, ItemMangekyoSharingan.helmet, ItemMangekyoSharinganObito.helmet, ItemRinnegan.helmet, ItemTenseigan.helmet, ItemSharingan.helmet, ItemByakugan.helmet };
+
+		if (advancement != null && !advancement.isEmpty()) {
+			for (String i: advancement) {
+				extras.RemoveAdvancement(player, i);
 			}
 		}
+
+		for (Item i : items){
+			extras.Removeitem(player, i);
+
+			if(ProcedureUtils.hasItemInInventory(player, i)){
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("player", player);
+				executeProcedure($_dependencies);
+			}
+		}
+
+
 	}
 }

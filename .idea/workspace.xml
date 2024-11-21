@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5227eeac-cb90-40cf-881c-6441ab6ef7ef" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/anbubingobook-1.3.0.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/anbubingobook-1.3.0.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/anbubingobook-1.3.0.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/anbubingobook-1.3.0.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anbubingobook.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/anbubingobook.mcreator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" beforeDir="false" afterPath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/ModConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/ModConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/command/CommandReroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/command/CommandReroll.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/procedure/ProcedureRerollCommandExecuted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/procedure/ProcedureRerollCommandExecuted.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/procedure/extras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/procedure/extras.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/anbubingobook/lang/en_us.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/anbubingobook/lang/en_us.lang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pack.mcmeta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +88,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "1.5.0",
+    "git-widget-placeholder": "1.5.1",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/PABELL/Desktop/AHZ naruto/anbubingobook-main/libs/narutomod_deobfu.jar",

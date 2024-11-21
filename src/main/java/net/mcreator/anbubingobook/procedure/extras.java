@@ -1,9 +1,11 @@
 package net.mcreator.anbubingobook.procedure;
 
+import net.mcreator.anbubingobook.ModConfig;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementManager;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.command.AdvancementCommand;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -16,6 +18,7 @@ import net.narutomod.NarutomodModVariables;
 import net.narutomod.item.ItemBakuton;
 import net.narutomod.item.ItemHyoton;
 import net.narutomod.item.ItemJutsu;
+import net.narutomod.item.ItemMokuton;
 import net.narutomod.procedure.ProcedureUtils;
 
 import javax.annotation.Nullable;
@@ -28,11 +31,10 @@ public class extras {
     @Nullable
     public static List<String> CheckAdvancements(EntityPlayerMP player) {
         List<String> advancements = new ArrayList<>();
-        List<Item> items = new ArrayList<>();
+
 
         if (ProcedureUtils.advancementAchieved(player, modid + "bakuton_acquired")) {
             advancements.add(modid + "bakuton_acquired");
-            items.add(ItemBakuton.block);
         }
         if (ProcedureUtils.advancementAchieved(player, modid + "byakuganopened")) {
             advancements.add(modid + "byakuganopened");
@@ -48,9 +50,6 @@ public class extras {
         }
         if (ProcedureUtils.advancementAchieved(player, modid + "kekkei_tota_awakened")) {
             advancements.add(modid + "kekkei_tota_awakened");
-        }
-        if (ProcedureUtils.advancementAchieved(player, modid + "mokuton_acquired")) {
-            advancements.add(modid + "mokuton_acquired");
         }
         if (ProcedureUtils.advancementAchieved(player, modid + "ranton_acquired")) {
             advancements.add(modid + "ranton_acquired");
@@ -85,6 +84,9 @@ public class extras {
         if (ProcedureUtils.advancementAchieved(player, modid + "sharinganopened")) {
             advancements.add(modid + "sharinganopened");
         }
+        if (ModConfig.WOOD_REROLL && ProcedureUtils.advancementAchieved(player, modid + "mokuton_acquired") ){
+            advancements.add(modid + "mokuton_acquired");
+        }
         if (advancements.isEmpty()) {
             return null;
         }
@@ -101,8 +103,14 @@ public class extras {
         }
     }
 
-    public static void Removeitem(Item item) {
-        ItemStack stack = new ItemStack(item);
-        stack.setCount(0);
+    public static void Removeitem(EntityPlayer player, Item item) {
+        if (ProcedureUtils.hasItemInInventory(player, item)) {
+            ItemStack stack = ProcedureUtils.getMatchingItemStack(player, item);
+            stack.shrink(1);
+        }
+        if (ModConfig.WOOD_REROLL && ProcedureUtils.hasItemInInventory(player, ItemMokuton.block)){
+            ItemStack wood = ProcedureUtils.getMatchingItemStack(player, ItemMokuton.block);
+            wood.shrink(1);
+        }
     }
 }
