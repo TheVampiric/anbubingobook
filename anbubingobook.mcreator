@@ -107,7 +107,7 @@
   "workspaceSettings": {
     "modid": "anbubingobook",
     "modName": "Anbu Bingo Book",
-    "version": "0.0.9",
+    "version": "1.5.3",
     "description": "In game guide book and QOL Changes for AHZNB\u0027s Naruto Shinobicraft",
     "author": "TheVampiric (X), Bobzeus (Door)",
     "websiteURL": "WIKI HERE NOWWWW https://ahznb-naruto-shinobicraft.fandom.com/wiki/AHZNB_Naruto_ShinobiCraft_Wiki",
@@ -116,8 +116,8 @@
     "serverSideOnly": false,
     "updateURL": "https://github.com/TheVampiric/anbubingobook",
     "requiredMods": [
-      "  narutomod",
-      "patchouli"
+      " patchouli",
+      "narutomod"
     ],
     "dependencies": [],
     "dependants": [],

@@ -45,7 +45,7 @@ import java.util.function.Supplier;
 @Mod(modid = AnbubingobookMod.MODID, version = AnbubingobookMod.VERSION)
 public class AnbubingobookMod {
 	public static final String MODID = "anbubingobook";
-	public static final String VERSION = "0.0.9";
+	public static final String VERSION = "1.5.3";
 	public static final SimpleNetworkWrapper PACKET_HANDLER = NetworkRegistry.INSTANCE.newSimpleChannel("anbubingobook:a");
 	@SidedProxy(clientSide = "net.mcreator.anbubingobook.ClientProxyAnbubingobookMod", serverSide = "net.mcreator.anbubingobook.ServerProxyAnbubingobookMod")
 	public static IProxyAnbubingobookMod proxy;

@@ -3,7 +3,6 @@ package net.mcreator.anbubingobook.command;
 
 import net.minecraft.command.*;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
@@ -16,8 +15,6 @@ import net.mcreator.anbubingobook.ElementsAnbubingobookMod;
 import net.narutomod.procedure.ProcedureKGDistribution;
 
 import java.util.*;
-
-import static net.minecraft.command.CommandBase.*;
 
 @ElementsAnbubingobookMod.ModElement.Tag
 public class CommandReroll extends ElementsAnbubingobookMod.ModElement {
@@ -90,9 +87,6 @@ public class CommandReroll extends ElementsAnbubingobookMod.ModElement {
 
 		@Override
 		public void execute(MinecraftServer server, ICommandSender sender, String[] cmd) throws CommandException {
-			int x = sender.getPosition().getX();
-			int y = sender.getPosition().getY();
-			int z = sender.getPosition().getZ();
 
 			Entity entity = sender.getCommandSenderEntity();
 			Map<String, Object> $_dependencies = new HashMap<>();
@@ -100,7 +94,6 @@ public class CommandReroll extends ElementsAnbubingobookMod.ModElement {
 			EntityPlayer player;
 			boolean reroll = false;
 			if (entity != null) {
-				World world = entity.world;
 				HashMap<String, String> cmdparams = new HashMap<>();
 				int[] index = {0};
 				Arrays.stream(cmd).forEach(param -> {
@@ -115,9 +108,9 @@ public class CommandReroll extends ElementsAnbubingobookMod.ModElement {
 					}
 
 					if (cmd.length == 1 || cmd.length == 0){
-						reroll = false;
+						reroll = true;
 					}
-					if (cmd.length > 1) {
+					else {
 						reroll = Boolean.parseBoolean(cmd[1]);
 					}
 

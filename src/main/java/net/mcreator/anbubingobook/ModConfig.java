@@ -47,9 +47,10 @@ public class ModConfig extends ElementsAnbubingobookMod.ModElement	 {
 	@Config.Comment("Max Ninjaxp that a player can obtain")
 	public static double Max_Ninja_XP = 100000;
 
-
 	@Config.Comment("Jutsu xp amount changer, setting it to 2 = 2 jutsu xp per hit")
 	public static int Jutsu_XP_MULTI = 1;
+
+
 
 	@Config.Comment("true or false to if a tamed wolf should evolve the owners sharingan on death")
 	public static boolean solo_MS = false;
@@ -58,16 +59,27 @@ public class ModConfig extends ElementsAnbubingobookMod.ModElement	 {
 	public static double Wolf_XP = 1000.0;
 
 
+
 	@Config.Comment("Should Player spawn with the ninja advancement?")
 	public static boolean NINJA_START = false;
+
+
+
 
 	@Config.Comment("Should Evolving a sharingan into MS give the player the base sharingan advancement as well as the Mangekyo advancement (also effects /evolve)")
 	public static boolean BASE_SHARINGAN_ADVANCEMENT = false;
 
+	@Config.Comment("Set to true to allow /reroll to remove advancement + item for wood release")
+	public static boolean WOOD_REROLL = false;
+
+
+
 	@Config.Comment("what % of chakra a player should regen every 4 seconds (even while moving) 0.1 = 10%")
 	public static float PASSIVE_REGEN_AMOUNT = 0.00f;
 
-	@Config.Comment("Set to true to allow /reroll to remove advancement + item for wood release")
-	public static boolean WOOD_REROLL = false;
+	@Config.Comment("% amount of chakra to regain after respawn")
+	public static float RESPAWN_AMOUNT = 0.00f;
+
+
 
 }

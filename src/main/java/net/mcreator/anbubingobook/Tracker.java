@@ -41,6 +41,7 @@ import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.PlayerEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.narutomod.Chakra;
 import net.narutomod.NarutomodModVariables;
@@ -54,7 +55,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 import net.minecraft.entity.Entity;
-import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent;
 
 
@@ -194,37 +194,39 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
         @SubscribeEvent(priority = EventPriority.LOW)
         public void LivingDeathEvent(LivingDeathEvent event) {
 
-            if (ModConfig.solo_MS) {
-
-                if (event.getSource().getTrueSource() instanceof EntityPlayer) {
+            if (ModConfig.solo_MS && event.getSource().getTrueSource() instanceof EntityPlayer && event.getEntity() instanceof EntityWolf) {
 
 
-                    if (event.getEntity() instanceof EntityWolf) {
+                EntityWolf wolf = (EntityWolf) event.getEntity();
+                EntityPlayer player = (EntityPlayer) event.getSource().getTrueSource();
 
-                        EntityWolf wolf = (EntityWolf) event.getEntity();
-                        EntityPlayer player = (EntityPlayer) event.getSource().getTrueSource();
-
-                        UUID WOLFUU = wolf.getOwnerId();
-                        UUID PUUID = player.getUniqueID();
+                UUID WOLFUU = wolf.getOwnerId();
+                UUID PUUID = player.getUniqueID();
 
 
-                        ItemStack helmet = player.inventory.armorInventory.get(3);
+                ItemStack helmet = player.inventory.armorInventory.get(3);
 
-                        if (WOLFUU == PUUID) {
-                            if (helmet.getItem() == ItemSharingan.helmet) {
-                                if (ModConfig.Wolf_XP <= player.getEntityData().getDouble(BATTLEXP)) {
-                                    helmet.shrink(1);
-                                    Map<String, Object> dependencies = new HashMap<>();
-                                    dependencies.put("entity", player);
-                                    procedureevolve.executeProcedure(dependencies);
-                                }
-                            }
-
+                if (WOLFUU == PUUID) {
+                    if (helmet.getItem() == ItemSharingan.helmet) {
+                        if (ModConfig.Wolf_XP <= player.getEntityData().getDouble(BATTLEXP)) {
+                            helmet.shrink(1);
+                            Map<String, Object> dependencies = new HashMap<>();
+                            dependencies.put("entity", player);
+                            procedureevolve.executeProcedure(dependencies);
                         }
                     }
+
+                }
+            }
+            if (event.getEntity() instanceof EntityPlayer && ModConfig.RESPAWN_AMOUNT > 0) {
+                EntityPlayer player = (EntityPlayer) event.getEntity();
+                if (!player.world.isRemote) {
+                    Chakra.pathway(player).consume(ModConfig.RESPAWN_AMOUNT * -1);
+                    Chakra.pathway(player).consume(10.0d);
                 }
             }
         }
+
 
 		@SubscribeEvent
 		public void onJoin(PlayerLoggedInEvent event){
