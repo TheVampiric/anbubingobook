@@ -1,4 +1,3 @@
-
 *.lock
 *.log
 *.gz
@@ -9,4 +8,7 @@
 *.mcreator
 run/
 .classpath
-!build.gradle
+/.idea
+/build
+/build
+/.idea

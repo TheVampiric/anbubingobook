@@ -1,0 +1,4 @@
+-- Added config for ticks between chakra regen
+-- Added config for susanoo drain + ticks between susanoo drain (does not affect drain from holding susanoo weapons)
+
+-- Removed config for ninja xp multiplier (was added to main mod)

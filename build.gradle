@@ -68,7 +68,7 @@ repositories {
 dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2855'
 
-    implementation fg.deobf("curse.maven:narutomod-831157:4767054")
+    implementation fg.deobf("curse.maven:ahznbs-naruto-mod-831157:5967126")
     runtimeOnly fg.deobf("curse.maven:Patchouli-306770:3162874")
 }
 

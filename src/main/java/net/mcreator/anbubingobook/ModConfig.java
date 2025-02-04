@@ -41,9 +41,6 @@ public class ModConfig extends ElementsAnbubingobookMod.ModElement	 {
 	}
 
 
-	@Config.Comment("Ninja xp multiplier, multiplier is not exact")
-	public static double Ninja_XP_MULTI = 1.0;
-
 	@Config.Comment("Max Ninjaxp that a player can obtain")
 	public static double Max_Ninja_XP = 100000;
 
@@ -73,12 +70,22 @@ public class ModConfig extends ElementsAnbubingobookMod.ModElement	 {
 	public static boolean WOOD_REROLL = false;
 
 
+	@Config.Comment("amount of ticks that have to pass before player regens chakra (20 ticks = 1 second)")
+	public static int REGEN_TICKS = 80;
 
 	@Config.Comment("what % of chakra a player should regen every 4 seconds (even while moving) 0.1 = 10%")
 	public static float PASSIVE_REGEN_AMOUNT = 0.00f;
 
 	@Config.Comment("% amount of chakra to regain after respawn")
 	public static float RESPAWN_AMOUNT = 0.00f;
+
+
+
+	@Config.Comment("Ticks needed for susanoo drain (20 ticks = 1 second)")
+	public static int SUSANOO_TICKS = 20;
+
+	@Config.Comment("Drain of susanoo at each stage per second")
+	public static double[] SUSANOO_DRAIN = {30,30,30,30,30};
 
 
 

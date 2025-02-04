@@ -6,12 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="5227eeac-cb90-40cf-881c-6441ab6ef7ef" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anbubingobook.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/anbubingobook.mcreator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/AnbubingobookMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/AnbubingobookMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/ModConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/ModConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/assets/anbubingobook/lang/en_us.lang" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/assets/anbubingobook/lang/en_us.lang" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mcmod.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/Tracker$PlayerHook.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/Tracker$PlayerHook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/Tracker.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/Tracker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pack.mcmeta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" beforeDir="false" afterPath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/createSrgToMcp/output.srg" beforeDir="false" afterPath="$PROJECT_DIR$/build/createSrgToMcp/output.srg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/modid-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/modid-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reobfJar/output.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/reobfJar/output.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/Tracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/Tracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/command/CommandReroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/command/CommandReroll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/anbubingobook/lang/en_us.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/anbubingobook/lang/en_us.lang" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pack.mcmeta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +55,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="anbubingobook" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="help" type="c8890929:TasksNode$1" />
+                <item name="fg_runs" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -84,13 +94,17 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.runClient.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build anbubingobook.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.C:/Users/scott/Downloads/anbubingobook-1.3.0 (2)/anbubingobook-1.3.0 [:createMcpToSrg :createMcpToSrg :createMcpToSrg].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.anbubingobook [:createMcpToSrg :createMcpToSrg :createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.anbubingobook [:prepareRunClient].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.anbubingobook [genIntellijRuns].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.anbubingobook-1.3.0 [:createMcpToSrg :createMcpToSrg :createMcpToSrg].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;1.5.1&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;1.6.0&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/PABELL/Desktop/AHZ naruto/anbubingobook-main/libs/narutomod_deobfu.jar&quot;,
@@ -112,7 +126,7 @@
       <recent name="net.mcreator.anbubingobook" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.anbubingobook [compileJava]">
+  <component name="RunManager" selected="Application.runClient">
     <configuration name="anbubingobook [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -179,7 +193,7 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="anbubingobook [eclipse]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="anbubingobook [genIntellijRuns]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -190,7 +204,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="eclipse" />
+            <option value="genIntellijRuns" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -225,11 +239,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.anbubingobook [genIntellijRuns]" />
         <item itemvalue="Gradle.anbubingobook [compileJava]" />
         <item itemvalue="Gradle.anbubingobook [build]" />
         <item itemvalue="Gradle.anbubingobook [assemble]" />
         <item itemvalue="Gradle.anbubingobook [jar]" />
-        <item itemvalue="Gradle.anbubingobook [eclipse]" />
       </list>
     </recent_temporary>
   </component>
