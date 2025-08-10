@@ -34,6 +34,7 @@ import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.MobEffects;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.text.ITextComponent;
@@ -42,6 +43,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.fml.common.Loader;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -53,6 +55,7 @@ import net.narutomod.entity.EntitySusanooClothed;
 import net.narutomod.entity.EntitySusanooSkeleton;
 import net.narutomod.entity.EntitySusanooWinged;
 import net.narutomod.item.ItemEightGates;
+import net.narutomod.item.ItemRinnegan;
 import net.narutomod.item.ItemSharingan;
 import net.narutomod.procedure.ProcedureSync;
 import net.narutomod.procedure.ProcedureUtils;
@@ -62,10 +65,17 @@ import java.util.Map;
 import java.util.UUID;
 import net.minecraft.entity.Entity;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent;
+import org.lwjgl.Sys;
 
 
 @ElementsAnbubingobookMod.ModElement.Tag
 public class Tracker extends ElementsAnbubingobookMod.ModElement {
+
+
+    private static final double[] DEFAULT_DRAIN = {-30d, -30d, -60d, -70d, -90d};
+    private static final double[] STOLEN_DEFAULT_DRAIN = {-60d, -60d, -120d, -140d, -180d};
+    private static int DEFAULT_TIME = 40;
+    private static int REGEN_TIMER = 0;
 
 
     private static final String BATTLEXP = NarutomodModVariables.BATTLEXP;
@@ -181,6 +191,7 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
 
         @SubscribeEvent
         public void onTick(TickEvent.PlayerTickEvent event) {
+
             if (event.phase == TickEvent.Phase.END && event.player instanceof EntityPlayerMP) {
                 double d = getBattleXp(event.player) * 0.005d;
                 if (d > 0d) {
@@ -256,43 +267,88 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
         public void RegenAndDrain(TickEvent.PlayerTickEvent event) {
             EntityPlayer player = event.player;
             if (PlayerTracker.isNinja(player) && !player.world.isRemote && event.phase == TickEvent.Phase.END) {
-                if (ModConfig.CUSTOM_SUSANOO_DRAIN) {
-                    if (!(player.getRidingEntity() instanceof EntitySusanooBase) && player.ticksExisted % ModConfig.REGEN_TICKS == 0) {
-                        Chakra.pathway(player).consume(-ModConfig.PASSIVE_REGEN_AMOUNT);
+                int time;
 
+                if (ModConfig.SUSANOO_TICKS != DEFAULT_TIME) {
+                    time = ModConfig.SUSANOO_TICKS;
+                } else {
+                    time = DEFAULT_TIME;
+                }
+                if (player.getRidingEntity() instanceof EntitySusanooBase) {
+                    Entity susanoo = player.getRidingEntity();
+                        if (ModConfig.CUSTOM_SUSANOO_DRAIN) {
+                        if (susanoo.ticksExisted % time == 0) {
 
-                    } else if (player.getRidingEntity() instanceof EntitySusanooBase) {
-                        Entity susanoo = player.getRidingEntity();
-
-                        if (susanootime >= ModConfig.SUSANOO_TICKS) {
+                            ItemStack MS = player.inventory.armorInventory.get(3);
+                            boolean owner = ProcedureUtils.isOriginalOwner(player, MS);
                             boolean legs;
-                            if (susanoo instanceof EntitySusanooWinged.EntityCustom) {
-                                Chakra.pathway(player).consume(ModConfig.SUSANOO_DRAIN[4]);
 
+                            if (susanoo instanceof EntitySusanooWinged.EntityCustom) {
+                                if (owner) {
+                                    Chakra.pathway(player).consume(DEFAULT_DRAIN[4]);
+                                    Chakra.pathway(player).consume(ModConfig.SUSANOO_DRAIN[4]);
+                                } else {
+                                    Chakra.pathway(player).consume(STOLEN_DEFAULT_DRAIN[4]);
+                                    Chakra.pathway(player).consume(ModConfig.STOLEN_SUSANOO_DRAIN[4]);
+                                }
 
                             } else if (susanoo instanceof EntitySusanooClothed.EntityCustom) {
                                 legs = ((EntitySusanooClothed.EntityCustom) susanoo).hasLegs();
                                 if (legs) {
-                                    Chakra.pathway(player).consume(ModConfig.SUSANOO_DRAIN[3]);
+                                    if (owner) {
+                                        Chakra.pathway(player).consume(DEFAULT_DRAIN[3]);
+                                        Chakra.pathway(player).consume(ModConfig.SUSANOO_DRAIN[3]);
+                                    } else {
+                                        Chakra.pathway(player).consume(STOLEN_DEFAULT_DRAIN[3]);
+                                        Chakra.pathway(player).consume(ModConfig.STOLEN_SUSANOO_DRAIN[3]);
+                                    }
                                 } else {
-                                    Chakra.pathway(player).consume(ModConfig.SUSANOO_DRAIN[2]);
+                                    if (owner) {
+                                        Chakra.pathway(player).consume(DEFAULT_DRAIN[2]);
+                                        Chakra.pathway(player).consume(ModConfig.SUSANOO_DRAIN[2]);
+                                    } else {
+                                        Chakra.pathway(player).consume(STOLEN_DEFAULT_DRAIN[2]);
+                                        Chakra.pathway(player).consume(ModConfig.STOLEN_SUSANOO_DRAIN[2]);
+                                    }
                                 }
-
 
                             } else if (susanoo instanceof EntitySusanooSkeleton.EntityCustom) {
                                 legs = ((EntitySusanooSkeleton.EntityCustom) susanoo).isFullBody();
                                 if (legs) {
-                                    Chakra.pathway(player).consume(ModConfig.SUSANOO_DRAIN[1]);
+                                    if (owner) {
+                                        Chakra.pathway(player).consume(DEFAULT_DRAIN[1]);
+                                        Chakra.pathway(player).consume(ModConfig.SUSANOO_DRAIN[1]);
+                                    } else {
+                                        Chakra.pathway(player).consume(STOLEN_DEFAULT_DRAIN[1]);
+                                        Chakra.pathway(player).consume(ModConfig.STOLEN_SUSANOO_DRAIN[1]);
+                                    }
                                 } else {
-                                    Chakra.pathway(player).consume(ModConfig.SUSANOO_DRAIN[0]);
+                                    if (owner) {
+                                        Chakra.pathway(player).consume(DEFAULT_DRAIN[0]);
+                                        Chakra.pathway(player).consume(ModConfig.SUSANOO_DRAIN[0]);
+                                    } else {
+                                        Chakra.pathway(player).consume(STOLEN_DEFAULT_DRAIN[0]);
+                                        Chakra.pathway(player).consume(ModConfig.STOLEN_SUSANOO_DRAIN[0]);
+                                    }
                                 }
                             }
 
-
-                            susanootime = 0;
-
                         }
-                        susanootime++;
+                    }
+
+                        if (!ModConfig.RINNEGAN_INF_SUSANOO && susanoo.ticksExisted >= ModConfig.SUSANOO_ALIVE_TICKS) {
+                            Item rinnegan = ItemRinnegan.helmet;
+                            if (ProcedureUtils.hasItemInMainInventory(player, rinnegan)) {
+                                susanoo.setDead();
+                            }
+                        }
+                }
+                if (ModConfig.PASSIVE_REGEN_AMOUNT > 0){
+                    if(REGEN_TIMER >= ModConfig.REGEN_TICKS){
+                        REGEN_TIMER = 0;
+                        Chakra.pathway(player).consume(-ModConfig.PASSIVE_REGEN_AMOUNT);
+                    }else {
+                        REGEN_TIMER++;
                     }
 
                 }
@@ -300,12 +356,11 @@ public class Tracker extends ElementsAnbubingobookMod.ModElement {
         }
     }
 
-
-
-
     @Override
     public void init(FMLInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(new PlayerHook());
     }
-
 }
+
+
+

@@ -5,22 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5227eeac-cb90-40cf-881c-6441ab6ef7ef" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/ModConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/ModConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/Tracker$PlayerHook.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/Tracker$PlayerHook.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/Tracker.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/Tracker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/command/CommandReroll$CommandHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/command/CommandReroll.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/command/evolve$CommandHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/mcreator/anbubingobook/command/evolve.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" beforeDir="false" afterPath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/createSrgToMcp/output.srg" beforeDir="false" afterPath="$PROJECT_DIR$/build/createSrgToMcp/output.srg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/ModConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/ModConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/Tracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/Tracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/command/CommandReroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/command/reroll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/command/evolve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/anbubingobook/command/givems.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
