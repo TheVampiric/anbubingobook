@@ -3,7 +3,6 @@ package net.mcreator.anbubingobook.command;
 
 import net.minecraft.command.*;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.world.World;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
 import net.minecraft.util.math.BlockPos;
@@ -17,14 +16,12 @@ import net.narutomod.procedure.ProcedureKGDistribution;
 import java.util.*;
 
 @ElementsAnbubingobookMod.ModElement.Tag
-public class CommandReroll extends ElementsAnbubingobookMod.ModElement {
-	public CommandReroll(ElementsAnbubingobookMod instance) {
+public class reroll extends ElementsAnbubingobookMod.ModElement {
+	public reroll(ElementsAnbubingobookMod instance) {
 		super(instance, 8);
 	}
 
 	public static List<String> output = new ArrayList<>();
-
-
 
 	@Override
 	public void serverLoad(FMLServerStartingEvent event) {
@@ -44,7 +41,7 @@ public class CommandReroll extends ElementsAnbubingobookMod.ModElement {
 
 		@Override
 		public List getAliases() {
-			return new ArrayList();
+			return new ArrayList<>();
 		}
 
 		@Override

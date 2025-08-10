@@ -84,8 +84,11 @@ public class ModConfig extends ElementsAnbubingobookMod.ModElement	 {
 	@Config.Comment("Ticks needed for susanoo drain (20 ticks = 1 second)")
 	public static int SUSANOO_TICKS = 20;
 
+	@Config.Comment("If the game should use the custom or default susanoo drain amounts")
+	public static boolean CUSTOM_SUSANOO_DRAIN = false;
+
 	@Config.Comment("Drain of susanoo at each stage per second")
-	public static double[] SUSANOO_DRAIN = {30,30,30,30,30};
+	public static double[] SUSANOO_DRAIN = {30,30,60,70,90};
 
 
 

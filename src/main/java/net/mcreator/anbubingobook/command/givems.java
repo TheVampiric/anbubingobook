@@ -5,10 +5,7 @@ import net.mcreator.anbubingobook.procedure.procedureevolve;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.nbt.NBTBase;
-import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
@@ -19,8 +16,8 @@ import java.util.List;
 import java.util.Map;
 
 @ElementsAnbubingobookMod.ModElement.Tag
-public class evolve extends ElementsAnbubingobookMod.ModElement {
-    public evolve(ElementsAnbubingobookMod instance) {
+public class givems extends ElementsAnbubingobookMod.ModElement {
+    public givems(ElementsAnbubingobookMod instance) {
         super(instance, 57);
     }
 
@@ -50,12 +47,19 @@ public class evolve extends ElementsAnbubingobookMod.ModElement {
 
         @Override
         public String getName() {
-            return "evolve";
+            return "givems";
         }
 
         @Override
         public String getUsage(ICommandSender target) {
-            return "/evolve <target>";
+            return "/givems <target>";
+        }
+
+        @Override
+        public List<String> getAliases() {
+            List<String> alias = new ArrayList<>();
+            alias.add("evolve");
+            return alias;
         }
 
         @Override
@@ -70,6 +74,7 @@ public class evolve extends ElementsAnbubingobookMod.ModElement {
             else {
                 player = getPlayer(server, sender, args[0]);
             }
+
 
 
 

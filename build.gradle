@@ -70,6 +70,7 @@ dependencies {
 
     implementation fg.deobf("curse.maven:ahznbs-naruto-mod-831157:5967126")
     runtimeOnly fg.deobf("curse.maven:Patchouli-306770:3162874")
+    implementation fg.deobf("curse.maven:ahznb-tweaks-1252580:6512648")
 }
 
 apply from: 'mcreator.gradle'
